@@ -25,4 +25,4 @@ Some of my writings, mostly about Ethereum blockchain.
 
 [LinkedIn](https://www.linkedin.com/in/oleg-kondrakhanov-0142b114a/)
 
-:mailbox: [kondrahanov@gmail.com](mailto:kondrahanov@gmail.com)
+E-mail: [kondrahanov@gmail.com](mailto:kondrahanov@gmail.com)
