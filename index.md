@@ -1,7 +1,7 @@
 # About me
 
 Hello. 
-My name is Oleg Kondrakhanov and I am software developer with more than 10 ears experience. 
+My name is Oleg Kondrakhanov and I am software developer with more than 10 years experience. 
 
 This is my portfolio, a summary of what I can do and what I've done.
 
@@ -16,9 +16,9 @@ Here are some of projects I am currently involved in (or was).
 ## Articles
 Some of my writings, mostly about Ethereum blockchain.
 
-1. https://medium.com/coinmonks/caching-ethereum-events-with-mysql-18bfa3558355
-2. https://medium.com/coinmonks/introducing-justsmartcontracts-dev-web-tool-for-interacting-with-ethereum-smart-contracts-da9b5dfe563c
-3. https://bcshop.io/blog/blog-coding/coding-insights-what-happens-during-a-transaction/
+1. [Caching Ethereum events with MySQL](https://medium.com/coinmonks/caching-ethereum-events-with-mysql-18bfa3558355)
+2. [Introducing JustSmartContracts.dev](https://medium.com/coinmonks/introducing-justsmartcontracts-dev-web-tool-for-interacting-with-ethereum-smart-contracts-da9b5dfe563c)
+3. [Coding insights: What happens during a transaction in Ethereum?](https://bcshop.io/blog/blog-coding/coding-insights-what-happens-during-a-transaction/)
 
 ## Contacts 
 [Medium](https://medium.com/@kondrahanov)
