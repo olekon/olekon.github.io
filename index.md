@@ -1,13 +1,12 @@
 # About me
-Hello. 
-My name is Oleg Kondrakhanov and I am software developer with more than 10 years experience. 
+My name is Oleg Kondrakhanov and I am a software engineer with more than 10 years experience. For now, I am highly interested in blockchain technologies, particularly Ethereum and Dapps.
 
 
 ## Projects
 Here are some of projects I am currently involved in (or was).
 
-1. [BCShop.io](https://bcshop.io/) - Ethereum based marketplace. Currently I am CTO of this project, also I am the author of the platform's smart contracts which are accessible [here](<https://github.com/bcshop-io/bcshop.io>).
-2. <https://justsmartcontracts.dev> - Nice web UI for interacting with Ethereum smart contracts. Project is open-source, please check [GitHub](<https://github.com/olekon/justsmartcontracts>).
+1. [BCShop.io](https://bcshop.io/) - Ethereum based marketplace. I am CTO of this project, also I am the author of the platform's smart contracts which are accessible [here](<https://github.com/bcshop-io/bcshop.io>).
+2. <https://justsmartcontracts.dev> - Nice web UI for interacting with Ethereum smart contracts. Project is open-source, please check [this repository](<https://github.com/olekon/justsmartcontracts>) and [that one](https://github.com/olekon/justsmartcontracts-api).
 
 
 ## Articles
