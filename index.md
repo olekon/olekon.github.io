@@ -19,8 +19,6 @@ Some of my writings, mostly about Ethereum blockchain.
 5. [Serving a Node.js Express App From a Subfolder — a Routing Lifehack](https://medium.com/better-programming/serving-a-node-js-express-app-from-a-subfolder-a-routing-lifehack-a3c88da9840c)
 
 ## Contacts 
-[Medium](https://medium.com/@kondrahanov)
-
-[LinkedIn](https://www.linkedin.com/in/oleg-kondrakhanov-0142b114a/)
-
-E-mail: [kondrahanov@gmail.com](mailto:kondrahanov@gmail.com)
+* [Medium](https://medium.com/@kondrahanov)
+* [LinkedIn](https://www.linkedin.com/in/oleg-kondrakhanov-0142b114a/)
+* E-mail: [kondrahanov@gmail.com](mailto:kondrahanov@gmail.com)
