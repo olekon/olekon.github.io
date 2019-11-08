@@ -17,6 +17,7 @@ Some of my writings, mostly about Ethereum blockchain.
 3. [Coding insights: What happens during a transaction in Ethereum?](https://bcshop.io/blog/blog-coding/coding-insights-what-happens-during-a-transaction/)
 4. [Think Twice Before Using Enums in Solidity Smart Contracts](https://medium.com/coinmonks/beware-the-solidity-enums-5f64b3435fa4) 
 5. [Serving a Node.js Express App From a Subfolder — a Routing Lifehack](https://medium.com/better-programming/serving-a-node-js-express-app-from-a-subfolder-a-routing-lifehack-a3c88da9840c)
+6. [How to store your Ether](https://bcshop.io/blog/blog-basics/how-to-store-your-ether/)
 
 ## Contacts 
 * [Medium](https://medium.com/@kondrahanov)
