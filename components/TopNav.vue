@@ -4,12 +4,15 @@
         toggleable="lg"
         variant="light"
     >
+        <b-navbar-brand class="brand">
+            <h1><span class="name">Oleg Kondrakhanov</span>Full stack web developer</h1>
+        </b-navbar-brand>
         <b-navbar-toggle target="nav-collapse" />
         <b-collapse
             id="nav-collapse"
             is-nav
         >
-            <b-navbar-nav>
+            <b-navbar-nav class="ml-auto">
                 <b-nav-item href="#about">
                     {{ $t('headers.about') }}
                 </b-nav-item>
