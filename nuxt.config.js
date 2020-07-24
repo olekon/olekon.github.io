@@ -26,8 +26,9 @@ export default {
     },
     /*
   ** Global CSS
-  */
+  */  
     css: [
+        '~/assets/styles/app.scss'
     ],
     /*
   ** Plugins to load before mounting the App
@@ -54,7 +55,27 @@ export default {
     // Doc: https://bootstrap-vue.js.org
         'bootstrap-vue/nuxt',
         // Doc: https://axios.nuxtjs.org/usage
-        '@nuxtjs/axios'
+        '@nuxtjs/axios',
+        ['nuxt-i18n', {
+            locales: [
+                {
+                    name: 'Русский',
+                    code: 'ru',
+                    iso: 'ru-RU',
+                    file: 'ru-RU.js'
+                },
+                {
+                    name: 'English',
+                    code: 'en',
+                    iso: 'en-US',
+                    file: 'en-US.js'
+                },
+            ],
+            lazy: true,
+            langDir: 'lang/',
+            strategy: 'prefix_except_default',
+            defaultLocale: 'en'
+        }]
     ],
     /*
   ** Axios module configuration
@@ -66,5 +87,13 @@ export default {
   ** See https://nuxtjs.org/api/configuration-build/
   */
     build: {
+        extend(config, ctx) {
+            if (ctx && ctx.isClient) {
+                config.optimization.splitChunks.maxSize = 204800;
+            }
+            if (ctx.isDev) {
+                config.devtool = ctx.isClient ? 'source-map' : 'inline-source-map';
+            }
+        }
     }
 };
