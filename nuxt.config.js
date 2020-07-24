@@ -57,20 +57,22 @@ export default {
         // Doc: https://axios.nuxtjs.org/usage
         '@nuxtjs/axios',
         ['nuxt-i18n', {
-            locales: [
-                {
-                    name: 'Русский',
-                    code: 'ru',
-                    iso: 'ru-RU',
-                    file: 'ru-RU.js'
-                },
-                {
-                    name: 'English',
-                    code: 'en',
-                    iso: 'en-US',
-                    file: 'en-US.js'
-                },
-            ],
+            locales: [{
+                name: 'Русский',
+                code: 'ru',
+                iso: 'ru-RU',
+                file: 'ru-RU.js'
+            },                {
+                name: 'English',
+                code: 'en',
+                iso: 'en-US',
+                file: 'en-US.js'
+            }],
+            vuex: {
+                moduleName: 'i18n',
+                syncLocale: true,                        
+                syncMessages: false,          
+            },
             lazy: true,
             langDir: 'lang/',
             strategy: 'prefix_except_default',

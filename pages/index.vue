@@ -2,7 +2,7 @@
     <div class="container">
         <div>
             <h1 class="title">
-                nuxtfolio
+                {{ $t('headers.projects') }}
             </h1>
             <div class="links">
                 <a
