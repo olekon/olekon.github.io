@@ -16,12 +16,12 @@
                 <b-nav-item href="#about">
                     {{ $t('headers.about') }}
                 </b-nav-item>
-                <b-nav-item href="#projects">
-                    {{ $t('headers.projects') }}
+                <b-nav-item href="#portfolio">
+                    {{ $t('headers.portfolio') }}
                 </b-nav-item>
-                <b-nav-item href="#skills">
+                <!-- <b-nav-item href="#skills">
                     {{ $t('headers.skills') }}
-                </b-nav-item>
+                </b-nav-item> -->
                 <b-nav-item href="#posts">
                     {{ $t('headers.posts') }}
                 </b-nav-item>

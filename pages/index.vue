@@ -2,18 +2,17 @@
     <div class="container">
         <main>
             <section id="about">
-                <h2>
-                    {{ $t('headers.about') }}
-                </h2>
-                <div class="abount-content">
-                    Vivamus rutrum, ipsum sodales laoreet finibus, ipsum neque pellentesque ex, et tempor ipsum ligula eget elit. Phasellus ultricies diam non faucibus auctor. Pellentesque id neque at libero ullamcorper efficitur. Nam mi libero, pulvinar vitae odio a, cursus interdum lectus. Fusce eu placerat turpis. Sed sagittis, dolor et pharetra tincidunt, turpis lacus tristique nunc, sed pellentesque metus lorem a orci. Duis suscipit quis nulla sit amet posuere. Integer ut tempor felis.
+                <div class="about-content">
+                    <h3>{{ $t('about.p1') }}</h3>
+                    <p>{{ $t('about.p2') }}</p>
+                    <p>{{ $t('about.p3') }}</p>
                 </div>
             </section>
-            <section id="projects">
+            <section id="portfolio">
                 <h2>
-                    {{ $t('headers.projects') }}
+                    {{ $t('headers.portfolio') }}
                 </h2>
-                <div class="abount-content">
+                <div class="about-content">
                     Vivamus rutrum, ipsum sodales laoreet finibus, ipsum neque pellentesque ex, et tempor ipsum ligula eget elit. Phasellus ultricies diam non faucibus auctor. Pellentesque id neque at libero ullamcorper efficitur. Nam mi libero, pulvinar vitae odio a, cursus interdum lectus. Fusce eu placerat turpis. Sed sagittis, dolor et pharetra tincidunt, turpis lacus tristique nunc, sed pellentesque metus lorem a orci. Duis suscipit quis nulla sit amet posuere. Integer ut tempor felis.
                 </div>
             </section>
@@ -21,7 +20,7 @@
                 <h2>
                     {{ $t('headers.skills') }}
                 </h2>
-                <div class="abount-content">
+                <div class="about-content">
                     Vivamus rutrum, ipsum sodales laoreet finibus, ipsum neque pellentesque ex, et tempor ipsum ligula eget elit. Phasellus ultricies diam non faucibus auctor. Pellentesque id neque at libero ullamcorper efficitur. Nam mi libero, pulvinar vitae odio a, cursus interdum lectus. Fusce eu placerat turpis. Sed sagittis, dolor et pharetra tincidunt, turpis lacus tristique nunc, sed pellentesque metus lorem a orci. Duis suscipit quis nulla sit amet posuere. Integer ut tempor felis.
                 </div>
             </section>
@@ -29,7 +28,7 @@
                 <h2>
                     {{ $t('headers.posts') }}
                 </h2>
-                <div class="abount-content">
+                <div class="about-content">
                     Vivamus rutrum, ipsum sodales laoreet finibus, ipsum neque pellentesque ex, et tempor ipsum ligula eget elit. Phasellus ultricies diam non faucibus auctor. Pellentesque id neque at libero ullamcorper efficitur. Nam mi libero, pulvinar vitae odio a, cursus interdum lectus. Fusce eu placerat turpis. Sed sagittis, dolor et pharetra tincidunt, turpis lacus tristique nunc, sed pellentesque metus lorem a orci. Duis suscipit quis nulla sit amet posuere. Integer ut tempor felis.
                 </div>
             </section>
@@ -37,7 +36,7 @@
                 <h2>
                     {{ $t('headers.contacts') }}
                 </h2>
-                <div class="abount-content">
+                <div class="about-content">
                     Vivamus rutrum, ipsum sodales laoreet finibus, ipsum neque pellentesque ex, et tempor ipsum ligula eget elit. Phasellus ultricies diam non faucibus auctor. Pellentesque id neque at libero ullamcorper efficitur. Nam mi libero, pulvinar vitae odio a, cursus interdum lectus. Fusce eu placerat turpis. Sed sagittis, dolor et pharetra tincidunt, turpis lacus tristique nunc, sed pellentesque metus lorem a orci. Duis suscipit quis nulla sit amet posuere. Integer ut tempor felis.
                 </div>
             </section>
