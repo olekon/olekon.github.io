@@ -6,16 +6,26 @@
         body-class="project-card-body"
     >
         <b-card-body overlay>
-            <div class="project-card-overlay justify-content-center align-items-center">
+            <div class="project-card-overlay d-flex flex-column justify-content-between align-items-center">
+                <h4 class="project-subtitle text-light">
+                    {{ project.short }}
+                </h4>
                 <div class="project-tags d-flex flex-wrap">
                     <div
                         v-for="tag in project.keywords"
                         :key="tag"
-                        class="project-tag bg-dark text-light"
+                        class="project-tag bg-warning text-dark"
                     >
                         {{ tag }}
                     </div>
                 </div>
+                <b-button
+                    class="w-50"
+                    variant="light"
+                    @click="$emit('click')"
+                >
+                    {{ $t('actions.details') }}
+                </b-button>
             </div>
         </b-card-body>
     </b-card>
@@ -29,19 +39,11 @@ export default {
             required: true,
         }
     },
-    data() {
-        return {
-
-        };
-    },
     computed: {
         coverImage() {
             return this.project.images.length ? this.project.images[0] : null;
         }
     },
-    methods: {
-
-    }
 };
 </script>
 
@@ -49,11 +51,12 @@ export default {
 $card-padding: 1.25rem;
 
 .project-card .card-img {
-    height: 240px;
+    height: 200px;
     object-fit: cover;
 }
 
 .card-img-overlay {
+    cursor: pointer;
     position: absolute;
     top: -$card-padding;
     right: -$card-padding;
@@ -63,21 +66,28 @@ $card-padding: 1.25rem;
 
     &:hover {
         .project-card-overlay {
-            display: flex;
-            background: content-box
-                linear-gradient(rgba(30, 30, 30, 0.9), rgba(20, 20, 20, 0.8));
+            opacity: 1;
+            background: linear-gradient(
+                rgba(30, 30, 30, 0.9),
+                rgba(20, 20, 20, 0.8)
+            );
         }
     }
     .project-card-overlay {
+        padding: 1rem;
         width: 100%;
         height: 100%;
-        display: none;
-        //transition: all 1s ease;
+        opacity: 0;
+        transition: all 0.5s ease-in;
+
+        .project-subtitle {
+            font-size: 14px;
+        }
     }
 }
 
 .project-tags {
-    padding: 0 1rem;
+    padding: 1rem;
     .project-tag {
         padding: 4px 8px;
         border-radius: 8px;

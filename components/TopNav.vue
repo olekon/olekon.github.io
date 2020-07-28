@@ -1,5 +1,6 @@
 <template>
     <b-navbar
+        id="main-nav"
         sticky
         toggleable="lg"
         variant="light"
@@ -19,9 +20,6 @@
                 <b-nav-item href="#portfolio">
                     {{ $t('headers.portfolio') }}
                 </b-nav-item>
-                <!-- <b-nav-item href="#skills">
-                    {{ $t('headers.skills') }}
-                </b-nav-item> -->
                 <b-nav-item href="#posts">
                     {{ $t('headers.posts') }}
                 </b-nav-item>

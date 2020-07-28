@@ -12,24 +12,16 @@
                 <h2>
                     {{ $t('headers.portfolio') }}
                 </h2>
-                <div class="about-content">
+                <div class="portfolio-content">
                     <Portfolio />
-                </div>
-            </section>
-            <section id="skills">
-                <h2>
-                    {{ $t('headers.skills') }}
-                </h2>
-                <div class="about-content">
-                    Vivamus rutrum, ipsum sodales laoreet finibus, ipsum neque pellentesque ex, et tempor ipsum ligula eget elit. Phasellus ultricies diam non faucibus auctor. Pellentesque id neque at libero ullamcorper efficitur. Nam mi libero, pulvinar vitae odio a, cursus interdum lectus. Fusce eu placerat turpis. Sed sagittis, dolor et pharetra tincidunt, turpis lacus tristique nunc, sed pellentesque metus lorem a orci. Duis suscipit quis nulla sit amet posuere. Integer ut tempor felis.
                 </div>
             </section>
             <section id="posts">
                 <h2>
                     {{ $t('headers.posts') }}
                 </h2>
-                <div class="about-content">
-                    Vivamus rutrum, ipsum sodales laoreet finibus, ipsum neque pellentesque ex, et tempor ipsum ligula eget elit. Phasellus ultricies diam non faucibus auctor. Pellentesque id neque at libero ullamcorper efficitur. Nam mi libero, pulvinar vitae odio a, cursus interdum lectus. Fusce eu placerat turpis. Sed sagittis, dolor et pharetra tincidunt, turpis lacus tristique nunc, sed pellentesque metus lorem a orci. Duis suscipit quis nulla sit amet posuere. Integer ut tempor felis.
+                <div class="posts-content">
+                    My posts
                 </div>
             </section>
             <section id="contacts">
@@ -37,7 +29,7 @@
                     {{ $t('headers.contacts') }}
                 </h2>
                 <div class="about-content">
-                    Vivamus rutrum, ipsum sodales laoreet finibus, ipsum neque pellentesque ex, et tempor ipsum ligula eget elit. Phasellus ultricies diam non faucibus auctor. Pellentesque id neque at libero ullamcorper efficitur. Nam mi libero, pulvinar vitae odio a, cursus interdum lectus. Fusce eu placerat turpis. Sed sagittis, dolor et pharetra tincidunt, turpis lacus tristique nunc, sed pellentesque metus lorem a orci. Duis suscipit quis nulla sit amet posuere. Integer ut tempor felis.
+                    My contacts
                 </div>
             </section>
         </main>
@@ -85,5 +77,9 @@ export default {
 
 .links {
     padding-top: 15px;
+}
+
+.about-content {
+    padding-top: 30%;
 }
 </style>

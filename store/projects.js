@@ -1,5 +1,6 @@
 export const state = () => ({
     list: [],
+    activeProject: null,
 });
 
 import data from '~/assets/js/data';
@@ -7,6 +8,14 @@ import data from '~/assets/js/data';
 export const mutations = {
     set(state, list) {
         state.list = [...list];      
+    },
+
+    chooseActiveProject(state, project) {
+        state.activeProject = project;
+    },
+
+    clearActiveProject(state) {
+        state.activeProject = null;
     }
 };
 

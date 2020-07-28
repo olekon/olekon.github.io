@@ -6,6 +6,9 @@ export default {
         posts: 'Posts',
         contacts: 'Contacts',
     },
+    actions: {
+        details: 'Details...'
+    },
     about: {
         p1: 'Hello. My name is Oleg Kondrakhanov',
         p2: 'I am a full stack web and blockchain developer',
