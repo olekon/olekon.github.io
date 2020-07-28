@@ -13,7 +13,7 @@
                     {{ $t('headers.portfolio') }}
                 </h2>
                 <div class="about-content">
-                    Vivamus rutrum, ipsum sodales laoreet finibus, ipsum neque pellentesque ex, et tempor ipsum ligula eget elit. Phasellus ultricies diam non faucibus auctor. Pellentesque id neque at libero ullamcorper efficitur. Nam mi libero, pulvinar vitae odio a, cursus interdum lectus. Fusce eu placerat turpis. Sed sagittis, dolor et pharetra tincidunt, turpis lacus tristique nunc, sed pellentesque metus lorem a orci. Duis suscipit quis nulla sit amet posuere. Integer ut tempor felis.
+                    <Portfolio />
                 </div>
             </section>
             <section id="skills">
@@ -45,7 +45,13 @@
 </template>
 
 <script>
-export default {};
+import Portfolio from '~/components/Portfolio.vue';
+
+export default {
+    components: {
+        Portfolio
+    }
+};
 </script>
 
 <style>

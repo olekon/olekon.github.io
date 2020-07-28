@@ -7,6 +7,7 @@ export default {
         weight: 4,
         order: 0,
         images: [
+            'https://i.imgur.com/MVVB4Sg.png',
             'https://i.imgur.com/7yF9lOp.png',
             'https://i.imgur.com/WfIWCTT.png',
             'https://i.imgur.com/G4iYdHp.png'
