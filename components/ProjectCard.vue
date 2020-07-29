@@ -1,6 +1,6 @@
 <template>
     <b-card
-        :img-src="coverImage"
+        :img-src="project.coverImage"
         :title="project.name"
         class="project-card"
         body-class="project-card-body"
@@ -37,11 +37,6 @@ export default {
         project: {
             type: Object,
             required: true,
-        }
-    },
-    computed: {
-        coverImage() {
-            return this.project.images.length ? this.project.images[0] : null;
         }
     },
 };

@@ -1,8 +1,9 @@
 <template>
-    <div>
+    <div v-if="activeProject">
         <div
             :id="containerId"
             :class="{show}"
+            class=""
         />
         <b-popover
             id="details-popover"
@@ -24,6 +25,71 @@
                 </b-button>
                 {{ activeProject.name }}
             </template>
+            <div class="details-content h-100">
+                <b-carousel
+                    controls
+                    indicators
+                    :interval="0"
+                >
+                    <b-carousel-slide
+                        v-for="image in activeProject.images"
+                        :key="image"
+                        class="slide-img"
+                    >
+                        <template v-slot:img>
+                            <b-img :src="image" />
+                        </template>
+                    </b-carousel-slide>
+                </b-carousel>
+
+                <div class="details-description p-4 mt-2 bg-light">
+                    <div class="details-description-long">
+                        <p
+                            v-for="(item, index) in activeProject.long"
+                            :key="index"
+                        >
+                            {{ item }}
+                        </p>
+                    </div>
+                    <div class="details-description-tech">
+                        <h3>{{ $t('headers.techDetails') }}</h3>
+                        <p
+                            v-for="(item, index) in activeProject.tech"
+                            :key="index"
+                        >
+                            {{ item }}
+                        </p>
+                        <div class="details-description-keywords d-flex">
+                            <div
+                                v-for="item in activeProject.keywords"
+                                :key="item"
+                                class="details-description-keyword m-1 p-2 bg-warning text-dark"
+                            >
+                                {{ item }}
+                            </div>
+                        </div>
+                    </div>
+                    <div class="details-description-links">
+                        <h3>{{ $t('headers.links') }}</h3>
+                        <div v-if="renderLinks">
+                            <p
+                                v-for="(item, index) in activeProject.links"
+                                :key="index"
+                            >
+                                <b-link
+                                    :href="item"
+                                    target="_blank"
+                                >
+                                    {{ item }}
+                                </b-link>
+                            </p>
+                        </div>
+                        <p v-else>
+                            {{ activeProject.links }}
+                        </p>
+                    </div>
+                </div>
+            </div>
         </b-popover>
     </div>
 </template>
@@ -52,6 +118,9 @@ export default {
                 }
             }
         },
+        renderLinks() {
+            return Array.isArray(this.activeProject.links);
+        },
         ...mapState(['activeProject']),
     },
 
@@ -78,7 +147,6 @@ export default {
         width: 100%;
         height: 100%;
         max-width: 100%;
-        padding: 20px;
         border: 0;
         margin: 0;
         transform: none !important;
@@ -91,9 +159,29 @@ export default {
             width: 100%;
             height: 100%;
             max-width: 100%;
-            background: #ffffff;
-            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
-            border-radius: 8px;
+            background: linear-gradient(rgb(100, 100, 100), rgb(80, 80, 80));
+
+            .details-content {
+                .carousel {
+                    height: 50%;
+                }
+                .slide-img {
+                    // width: auto;
+                    // height: 30%;
+                    img {
+                        max-height: 400px;
+                        width: 100%;
+                        object-fit: contain;
+                        object-position: center;
+                    }
+                }
+                .details-description-keywords {
+                    flex-wrap: wrap;
+                    .details-description-keyword {
+                        border-radius: 4px;
+                    }
+                }
+            }
         }
 
         .popover-header {
