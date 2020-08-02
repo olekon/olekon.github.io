@@ -6,7 +6,7 @@
         visible
         :title="activeProject.displayName"
         hide-footer
-        @close="onModalClose"
+        @hide="onModalClose"
     >
         <div class="details-content h-100">
             <div class="details-description mt-2">
@@ -15,7 +15,7 @@
                         v-for="(item, index) in activeProject.long"
                         :key="index"
                     >
-                        {{ item }}
+                        <VueMarkdown>{{ item }}</VueMarkdown>
                     </p>
                 </div>
                 <div class="details-description-tech">
@@ -24,7 +24,7 @@
                         v-for="(item, index) in activeProject.tech"
                         :key="index"
                     >
-                        {{ item }}
+                        <VueMarkdown>{{ item }}</VueMarkdown>
                     </p>
                     <div class="details-description-keywords d-flex">
                         <div
@@ -61,10 +61,14 @@
 </template>
 
 <script>
+import VueMarkdown from 'vue-markdown';
 import { createNamespacedHelpers } from 'vuex';
 const { mapState, mapMutations } = createNamespacedHelpers('projects');
 
 export default {
+    components: {
+        VueMarkdown
+    },
     props: {
 
     },

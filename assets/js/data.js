@@ -14,7 +14,7 @@ export default {
         ],
     }, {
         name: 'justsmartcontracts.dev',
-        keywords: ['react', 'web3.js', 'ethereum', 'node.js', 'express', 'storybook'],
+        keywords: ['react', 'web3.js', 'ethereum', 'ant design', 'node.js', 'express', 'storybook'],
         links: {
             website: 'https://justsmartcontracts.dev/',
             source: 'https://github.com/olekon/justsmartcontracts',
@@ -28,7 +28,7 @@ export default {
         ]
     }, {
         name: 'A2.legal',
-        keywords: ['react', 'redux', 'jest', 'and design'],
+        keywords: ['react', 'redux', 'jest', 'ant design'],
         links: false,        
         weight: 4,
         order: 2,

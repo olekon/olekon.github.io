@@ -44,7 +44,7 @@ export default {
                 myself.',
                 'It is able to deploy a new smart contract or inspect the existing one, generate transaction to sign \
                 later or right now, watch contract’s events, etc.',
-                'A friend of mine [https://github.com/32kaa] helped with the Metamask wallet integration for \
+                'A [friend of mine](https://github.com/32kaa) helped with the Metamask wallet integration for \
                 transaction signing.'
             ],
             tech: [
@@ -59,7 +59,7 @@ export default {
             short: 'MVP web application for a legal company. Users are able to apply for legal help, \
             then system matches suitable lawyers to solve a case.',
             long: [
-                'That was my first project as part of the Naulab [https://naulab.pro/] team, kind of "test task". \
+                'That was my first project as part of the [Naulab](https://naulab.pro/) team, kind of "test task". \
                 It was really small - about five pages total. The interesting part was that the app was split into \
                 three parts:',
                 '* App for clients, where they can post their cases',
@@ -76,7 +76,7 @@ export default {
         'imaginarium': {
             short: 'Online version of the "Imaginarium" board game.',
             long: [
-                'In this project I acted as part of Naulab [https://naulab.pro/] team',
+                'In this project I acted as part of the [Naulab](https://naulab.pro/) team',
                 'Here we decided to go with Vue on front-end with back-end based on Django. I’ve implemented most \
                 of the front-end part: developed Vue components and front-end app logic, including interaction via \
                 websockets.'
@@ -92,7 +92,7 @@ export default {
         't&d beauty': {
             short: 'Web application for T&D Beauty - a beauty services aggregator.',
             long: [
-                'In this project I acted as part of Naulab [https://naulab.pro/] team',
+                'In this project I acted as part of the [Naulab](https://naulab.pro/) team',
                 'My job was to implement almost all the front-end part - Nuxt setup, Vue components, HTML and \
                 CSS (actually SCSS) coding. ',
                 'So far this is my favorite and most interesting project from the list due to variety of front-end \
@@ -111,7 +111,7 @@ export default {
         'ghvs.ru': {
             short: 'Website for the Main Cathedral of the Russian Armed Forces.',
             long: [
-                'In this project I acted as part of Naulab [https://naulab.pro/] team.',
+                'In this project I acted as part of the [Naulab](https://naulab.pro/) team.',
                 'My job was to implement animations using CSS and JQuery - main menu, footer menu, buttons. \
                 I also coded several pages both in Django template and CSS, respecting three responsive design sizes.',
             ],

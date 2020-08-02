@@ -90,6 +90,9 @@ export default {
   ** See https://nuxtjs.org/api/configuration-build/
   */
     build: {
+        transpile: [
+            'vue-markdown'
+        ],
         extend(config, ctx) {
             if (ctx && ctx.isClient) {
                 config.optimization.splitChunks.maxSize = 204800;
