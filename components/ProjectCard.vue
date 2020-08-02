@@ -1,7 +1,7 @@
 <template>
     <b-card
         :img-src="project.coverImage"
-        :title="project.name"
+        :title="project.displayName"
         class="project-card"
         body-class="project-card-body"
     >

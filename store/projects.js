@@ -24,11 +24,11 @@ export const actions = {
         const projects = data.projects.map(project => {
             const newProject = {...project};
             
-            const {short, long, links, tech} = i18n.t(`projects['${project.name.toLowerCase()}']`);
+            const {short, long, links, tech, displayName} = i18n.t(`projects['${project.name.toLowerCase()}']`);
             newProject.short = short;
             newProject.long = [...long];
             newProject.tech = [...tech];
-
+            newProject.displayName = displayName || newProject.name;
             if(!newProject.links) {
                 newProject.links = links;
             }

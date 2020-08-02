@@ -15,10 +15,10 @@ export default {
     }, {
         name: 'justsmartcontracts.dev',
         keywords: ['react', 'web3.js', 'ethereum', 'node.js', 'express', 'storybook'],
-        links: [
-            'https://justsmartcontracts.dev/',
-            'https://github.com/olekon/justsmartcontracts',
-        ],
+        links: {
+            website: 'https://justsmartcontracts.dev/',
+            source: 'https://github.com/olekon/justsmartcontracts',
+        },
         weight: 5,
         order: 1,
         coverImage: 'https://i.imgur.com/eVbKnxc.png',
@@ -41,9 +41,9 @@ export default {
     }, {
         name: 'Imaginarium',
         keywords: ['vue', 'bootstrap', 'websockets', 'django'],
-        links: [
-            'https://playimaginarium.cosmodrome.games/'
-        ],
+        links: {
+            website: 'https://playimaginarium.cosmodrome.games/'
+        },
         weight: 5,
         order: 3,
         coverImage: 'https://i.imgur.com/EgXd9J3.png',
@@ -69,7 +69,9 @@ export default {
     }, {
         name: 'ghvs.ru',
         keywords: ['jquery', 'scss', 'django', 'wagtail'],
-        links: ['https://ghvs.ru/'],
+        links: {
+            website: 'https://ghvs.ru/'
+        },
         weight: 5,
         order: 5,
         coverImage: 'https://i.imgur.com/hcMLnw2.png',

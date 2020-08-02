@@ -8,6 +8,10 @@ export default {
         techDetails: 'Tech details',
         links: 'Links'
     },
+    links: {
+        website: 'Website',
+        source: 'Source code'
+    },
     actions: {
         details: 'Details...'
     },
@@ -82,7 +86,8 @@ export default {
                 templates. During the development we used webpack dev server.',
                 'Back-end is represented by two servers, both implemented using Django: web server renders website \
                 pages, game server (Django+Redis) handles websockets, game logic and players actions.'
-            ]
+            ],
+            displayName: 'Imaginarium online',
         },
         't&d beauty': {
             short: 'Web application for T&D Beauty - a beauty services aggregator.',

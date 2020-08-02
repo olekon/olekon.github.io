@@ -22,7 +22,7 @@
 
 <script>
 import ProjectCard from '~/components/ProjectCard.vue';
-import ProjectDetails from '~/components/ProjectDetails.vue';
+import ProjectDetails from '~/components/ProjectDetailsModal.vue';
 import { createNamespacedHelpers } from 'vuex';
 
 const { mapState, mapMutations } = createNamespacedHelpers('projects');
@@ -37,7 +37,6 @@ export default {
     },
     methods: {
         onProjectClick(project) {
-            console.log(project);
             this.chooseActiveProject(project);
         },
         ...mapMutations(['chooseActiveProject'])
