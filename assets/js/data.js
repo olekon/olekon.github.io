@@ -55,7 +55,7 @@ export default {
         ]
     }, {
         name: 'T&D Beauty',
-        keywords: ['nuxt', 'vue', 'nuxt-i18n', 'oauth', 'geolocation', 'django'],
+        keywords: ['nuxt', 'vue', 'vuex', 'bootstrap', 'oauth', 'geolocation', 'django'],
         links: false,
         weight: 5,
         order: 4,
@@ -82,14 +82,14 @@ export default {
         ]
     }],
 
-    filters: ['vue', 'react', 'jquery', 'bootstrap', 'node.js', 'django', 'ethereum'],
-
     keywords: {
         'node.js': {
-            image: ''
+            image: '',
+            filter: true,
         },
         'ethereum': {
-            image: ''
+            image: '',
+            filter: true,
         },
         'solidity': {
             image: ''
@@ -101,7 +101,8 @@ export default {
             image: ''
         },
         'react': {
-            image: ''
+            image: '',
+            filter: true,
         },
         'storybook': {
             image: ''
@@ -116,22 +117,29 @@ export default {
             image: ''
         },
         'ant design': {
-            image: ''
+            image: '',
         },
         'vue': {
-            image: ''
+            image: '',
+            filter: true,
+        },
+        'vuex': {
+            image: '',
         },
         'bootstrap': {
-            image: ''
+            image: '',
+            filter: true,
         },
         'websockets': {
             image: ''
         },
         'django': {
-            image: ''
+            image: '',
+            filter: true,
         },
         'nuxt': {
-            image: ''
+            image: '',
+            filter: true,
         },
         'oauth': {
             image: ''
@@ -140,7 +148,8 @@ export default {
             image: ''
         },
         'jquery': {
-            image: ''
+            image: '',
+            filter: true,
         },
         'scss': {
             image: ''

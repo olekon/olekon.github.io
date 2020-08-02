@@ -1,13 +1,15 @@
 <template>
     <div>
-        <div class="portfolio-list d-flex flex-wrap">
+        <PortfolioFilter />
+        <div class="portfolio-list">
             <b-row
                 cols="1"
                 cols-lg="2"
             >
                 <b-col
-                    v-for="project in list"
+                    v-for="project in filteredProjects"
                     :key="project.name"
+                    class="portfolio-col"
                 >
                     <ProjectCard
                         :project="project"
@@ -23,17 +25,19 @@
 <script>
 import ProjectCard from '~/components/ProjectCard.vue';
 import ProjectDetails from '~/components/ProjectDetailsModal.vue';
+import PortfolioFilter from '~/components/PortfolioFilter.vue';
 import { createNamespacedHelpers } from 'vuex';
 
-const { mapState, mapMutations } = createNamespacedHelpers('projects');
+const { mapGetters, mapMutations } = createNamespacedHelpers('projects');
 
 export default {
     components: {
         ProjectCard,
-        ProjectDetails
+        ProjectDetails,
+        PortfolioFilter
     },
     computed: {
-        ...mapState(['list'])
+        ...mapGetters(['filteredProjects'])
     },
     methods: {
         onProjectClick(project) {
@@ -43,3 +47,9 @@ export default {
     }
 };
 </script>
+
+<style lang="scss">
+.portfolio-col {
+    flex-grow: 1;
+}
+</style>

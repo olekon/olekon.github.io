@@ -13,7 +13,8 @@ export default {
         source: 'Source code'
     },
     actions: {
-        details: 'Details...'
+        details: 'Details...',
+        showAll: 'All',
     },
     about: {
         p1: 'Hello. My name is Oleg Kondrakhanov',

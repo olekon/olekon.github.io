@@ -1,13 +1,24 @@
+import data from '~/assets/js/data';
+
 export const state = () => ({
     list: [],
+    filters: [],
+    activeFilter: null,
     activeProject: null,
 });
 
-import data from '~/assets/js/data';
+export const getters = {
+    filteredProjects: ({list, activeFilter}) => 
+        activeFilter ? list.filter(({keywords}) => keywords.indexOf(activeFilter.name) !== -1) : list,
+};
 
 export const mutations = {
-    set(state, list) {
+    setProjects(state, list) {
         state.list = [...list];      
+    },
+
+    setFilters(state, filters) {
+        state.filters = [...filters];      
     },
 
     chooseActiveProject(state, project) {
@@ -16,6 +27,14 @@ export const mutations = {
 
     clearActiveProject(state) {
         state.activeProject = null;
+    },
+
+    chooseFilter(state, filter) {
+        state.activeFilter = filter;
+    },
+
+    clearFilter(state) {
+        state.activeFilter = null;
     }
 };
 
@@ -34,6 +53,14 @@ export const actions = {
             }
             return newProject;
         });
-        commit('set', projects);
+        commit('setProjects', projects);
+
+        const filters = Object.entries(data.keywords)
+            .filter(entry => entry[1].filter)
+            .map(entry => ({
+                name: entry[0],
+                image: entry[1].image
+            }));
+        commit('setFilters', filters);
     }
 };

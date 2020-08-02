@@ -14,7 +14,8 @@ export default {
         p3: 'Ознакомтесь с моми портфолио и некоторыми статьями, прокрутив страницу ниже',
     },
     actions: {
-        details: 'Больше...'
+        details: 'Больше...',
+        showAll: 'Все',
     },
     projects: {
         'bcshop.io': {
