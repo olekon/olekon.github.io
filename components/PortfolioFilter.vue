@@ -1,7 +1,7 @@
 <template>
     <ul class="portfolio-filters d-flex flex-wrap">
         <li
-            class="all-filter"
+            class="filter-btn all-filter"
             @click="clearFilter"
         >
             {{ $t('actions.showAll') }}
@@ -9,10 +9,15 @@
         <li
             v-for="item in filters"
             :key="item.name"
+            class="filter-btn"
             :class="{active: activeFilter == item}"
             @click="chooseFilter(item)"
         >
-            {{ item.name }}
+            <b-img
+                class="logo"
+                alt="logo"
+                :src="getLogo(item)"
+            /> <span>{{ item.name }}</span>
         </li>
     </ul>
 </template>
@@ -27,6 +32,9 @@ export default {
         ...mapState(['filters', 'activeFilter'])
     },
     methods: {
+        getLogo(filter) {
+            return require(`~/assets/images/${filter.image}`);
+        },
         ...mapMutations(['clearFilter', 'chooseFilter'])
     }
 };
@@ -35,7 +43,13 @@ export default {
 <style lang="scss">
 .portfolio-filters {
     list-style: none;
-    li {
+
+    .filter-btn {
+        height: 3rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
         cursor: pointer;
         padding: 0.5rem;
         border: 1px solid black;
@@ -46,6 +60,12 @@ export default {
         &::marker {
             display: none;
             content: none;
+        }
+
+        .logo {
+            display: block;
+            height: 100%;
+            margin-right: 0.5rem;
         }
     }
 }

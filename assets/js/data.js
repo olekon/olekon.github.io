@@ -84,13 +84,38 @@ export default {
 
     keywords: {
         'node.js': {
-            image: '',
+            image: 'nodejs-logo.svg',
             filter: true,
         },
         'ethereum': {
-            image: '',
+            image: 'ethereum-logo.svg',
             filter: true,
         },
+        'react': {
+            image: 'react-logo.svg',
+            filter: true,
+        },
+        'vue': {
+            image: 'vue-logo.svg',
+            filter: true,
+        },
+        'bootstrap': {
+            image: 'bootstrap-logo.svg',
+            filter: true,
+        },
+        'django': {
+            image: 'django-logo.svg',
+            filter: true,
+        },
+        'nuxt': {
+            image: 'nuxt-logo.svg',
+            filter: true,
+        },
+        'jquery': {
+            image: 'jquery-logo.svg',
+            filter: true,
+        },
+
         'solidity': {
             image: ''
         },
@@ -100,10 +125,7 @@ export default {
         'truffle': {
             image: ''
         },
-        'react': {
-            image: '',
-            filter: true,
-        },
+       
         'storybook': {
             image: ''
         },
@@ -119,38 +141,22 @@ export default {
         'ant design': {
             image: '',
         },
-        'vue': {
-            image: '',
-            filter: true,
-        },
+        
         'vuex': {
             image: '',
         },
-        'bootstrap': {
-            image: '',
-            filter: true,
-        },
+      
         'websockets': {
             image: ''
         },
-        'django': {
-            image: '',
-            filter: true,
-        },
-        'nuxt': {
-            image: '',
-            filter: true,
-        },
+       
         'oauth': {
             image: ''
         },
         'geolocation': {
             image: ''
         },
-        'jquery': {
-            image: '',
-            filter: true,
-        },
+       
         'scss': {
             image: ''
         },
