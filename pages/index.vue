@@ -28,7 +28,7 @@
                 <h2>
                     {{ $t('headers.contacts') }}
                 </h2>
-                <div class="about-content">
+                <div class="contacts-content">
                     My contacts
                 </div>
             </section>
@@ -81,5 +81,6 @@ export default {
 
 .about-content {
     padding-top: 30%;
+    font-size: 20px;
 }
 </style>

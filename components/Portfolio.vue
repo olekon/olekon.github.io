@@ -49,7 +49,12 @@ export default {
 </script>
 
 <style lang="scss">
-.portfolio-col {
-    flex-grow: 1;
+.portfolio-list {
+    .portfolio-col {
+        flex-grow: 1;
+    }
+    .project-card {
+        margin-bottom: 2rem;
+    }
 }
 </style>

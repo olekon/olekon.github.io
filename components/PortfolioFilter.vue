@@ -2,6 +2,7 @@
     <ul class="portfolio-filters d-flex flex-wrap">
         <li
             class="filter-btn all-filter"
+            :class="{active: activeFilter == null}"
             @click="clearFilter"
         >
             {{ $t('actions.showAll') }}

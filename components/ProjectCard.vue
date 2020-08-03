@@ -10,17 +10,9 @@
                 <h4 class="project-subtitle text-light">
                     {{ project.short }}
                 </h4>
-                <div class="project-tags d-flex flex-wrap">
-                    <div
-                        v-for="tag in project.keywords"
-                        :key="tag"
-                        class="project-tag bg-warning text-dark"
-                    >
-                        {{ tag }}
-                    </div>
-                </div>
+                <KeywordsList :keywords="project.keywords" />
                 <b-button
-                    class="w-50"
+                    class="w-75"
                     variant="light"
                     @click="$emit('click')"
                 >
@@ -32,7 +24,11 @@
 </template>
 
 <script>
+import KeywordsList from '~/components/KeywordsList';
 export default {
+    components: {
+        KeywordsList
+    },
     props: {
         project: {
             type: Object,
@@ -73,20 +69,11 @@ $card-padding: 1.25rem;
         width: 100%;
         height: 100%;
         opacity: 0;
-        transition: all 0.5s ease-in;
+        transition: all 0.3s ease-in;
 
         .project-subtitle {
             font-size: 14px;
         }
-    }
-}
-
-.project-tags {
-    padding: 1rem;
-    .project-tag {
-        padding: 4px 8px;
-        border-radius: 8px;
-        margin: 4px;
     }
 }
 </style>

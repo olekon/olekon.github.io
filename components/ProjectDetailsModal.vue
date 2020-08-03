@@ -26,15 +26,7 @@
                     >
                         <VueMarkdown>{{ item }}</VueMarkdown>
                     </p>
-                    <div class="details-description-keywords d-flex">
-                        <div
-                            v-for="item in activeProject.keywords"
-                            :key="item"
-                            class="details-description-keyword m-1 p-2 bg-warning text-dark"
-                        >
-                            {{ item }}
-                        </div>
-                    </div>
+                    <KeywordsList :keywords="activeProject.keywords" />
                 </div>
                 <div class="details-description-links mt-4">
                     <h3>{{ $t('headers.links') }}</h3>
@@ -63,11 +55,14 @@
 <script>
 import VueMarkdown from 'vue-markdown';
 import { createNamespacedHelpers } from 'vuex';
+import KeywordsList from '~/components/KeywordsList';
+
 const { mapState, mapMutations } = createNamespacedHelpers('projects');
 
 export default {
     components: {
-        VueMarkdown
+        VueMarkdown,
+        KeywordsList
     },
     props: {
 
