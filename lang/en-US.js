@@ -39,7 +39,7 @@ export default {
         'justsmartcontracts.dev': {
             short: 'Free open-source web tool for interacting with Ethereum smart contracts',
             long: [
-                'The idea of this tool came to me while I was working for BCShop.io. Back in the days it was quite \
+                'The idea of this tool came to me while I was working for BCShop. Back in the days it was quite \
                 hard to watch inner properties of the smart contract or call its methods especially if contract’s \
                 creator didn’t verify its source on the Etherscan. So I decided to create simple yet effective tool \
                 myself.',
