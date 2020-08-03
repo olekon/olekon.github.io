@@ -42,9 +42,11 @@ export default {
 
 <style lang="scss">
 .portfolio-filters {
+    padding: 0;
     list-style: none;
 
     .filter-btn {
+        min-width: 4rem;
         height: 3rem;
         display: flex;
         align-items: center;
@@ -55,7 +57,9 @@ export default {
         border: 1px solid black;
         margin: 0.5rem;
         &.active {
-            color: blue;
+            border: none;
+            font-weight: bold;
+            background-color: wheat;
         }
         &::marker {
             display: none;
