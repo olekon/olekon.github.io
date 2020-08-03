@@ -9,7 +9,9 @@ export const state = () => ({
 
 export const getters = {
     filteredProjects: ({list, activeFilter}) => 
-        activeFilter ? list.filter(({keywords}) => keywords.indexOf(activeFilter.name) !== -1) : list,
+        activeFilter ? 
+            list.filter(({keywords}) => keywords.indexOf(activeFilter.name) !== -1) : 
+            list,
 };
 
 export const mutations = {
@@ -53,6 +55,8 @@ export const actions = {
             }
             return newProject;
         });
+
+        projects.sort((a, b) => b.weight - a.weight);
         commit('setProjects', projects);
 
         const filters = Object.entries(data.keywords)
