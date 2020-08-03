@@ -31,7 +31,7 @@
                     {{ $t('headers.contacts') }}
                 </h2>
                 <div class="contacts-content">
-                    My contacts
+                    <ContactButtons />
                 </div>
             </section>
         </main>
@@ -41,9 +41,11 @@
 <script>
 import Portfolio from '~/components/Portfolio.vue';
 import PostsList from '~/components/PostsList.vue';
+import ContactButtons from '~/components/ContactButtons.vue';
 
 export default {
     components: {
+        ContactButtons,
         Portfolio,
         PostsList
     }
@@ -84,7 +86,7 @@ export default {
 }
 
 .about-content {
-    padding-top: 30%;
+    padding-top: 20%;
     font-size: 20px;
 }
 </style>

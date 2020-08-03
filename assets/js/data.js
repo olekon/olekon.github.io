@@ -104,6 +104,20 @@ export default {
         keywords: ['node.js', 'express']
     }],
 
+    contacts:[{
+        name: 'email',
+        url: 'mailto://kondrahano@gmail.com'
+    }, {
+        name: 'linkedin',
+        url: 'https://www.linkedin.com/in/oleg-kondrakhanov-0142b114a/'
+    }, {
+        name: 'github',
+        url: 'https://github.com/olekon/'
+    }, {
+        name: 'medium',
+        url: 'https://medium.com/@kondrahanov'
+    }],
+
     keywords: {
         'node.js': {
             image: 'nodejs-logo.svg',

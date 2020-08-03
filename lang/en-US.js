@@ -3,7 +3,7 @@ export default {
         about: 'About',
         portfolio: 'Portfolio',
         skills: 'Skills',
-        posts: 'Posts',
+        posts: 'Articles',
         contacts: 'Contacts',
         techDetails: 'Tech details',
         links: 'Links'
@@ -21,6 +21,9 @@ export default {
         p1: 'Hello. My name is Oleg Kondrakhanov',
         p2: 'I am a full stack web and blockchain developer',
         p3: 'You can check my portfolio and blog posts below',
+    },
+    contacts: {
+      
     },
     projects: {
         'bcshop.io': {
