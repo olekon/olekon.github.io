@@ -36,6 +36,7 @@ export default {
   */
     plugins: [
         '~/plugins/i18n.js',
+        '~/plugins/carousel.client.js',
     ],
     /*
   ** Auto import components

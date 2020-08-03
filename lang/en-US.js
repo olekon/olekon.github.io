@@ -15,6 +15,7 @@ export default {
     actions: {
         details: 'Details...',
         showAll: 'All',
+        readPost: 'Read...'
     },
     about: {
         p1: 'Hello. My name is Oleg Kondrakhanov',

@@ -21,7 +21,9 @@
                     {{ $t('headers.posts') }}
                 </h2>
                 <div class="posts-content">
-                    My posts
+                    <client-only>
+                        <PostsList />
+                    </client-only>
                 </div>
             </section>
             <section id="contacts">
@@ -38,10 +40,12 @@
 
 <script>
 import Portfolio from '~/components/Portfolio.vue';
+import PostsList from '~/components/PostsList.vue';
 
 export default {
     components: {
-        Portfolio
+        Portfolio,
+        PostsList
     }
 };
 </script>

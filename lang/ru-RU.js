@@ -16,6 +16,7 @@ export default {
     actions: {
         details: 'Больше...',
         showAll: 'Все',
+        readPost: 'Читать...'
     },
     projects: {
         'bcshop.io': {
