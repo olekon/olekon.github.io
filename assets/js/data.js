@@ -82,6 +82,28 @@ export default {
         ]
     }],
 
+    posts: [{
+        name: 'caching',
+        title: 'Caching Ethereum events with MySQL',
+        url: 'https://medium.com/coinmonks/caching-ethereum-events-with-mysql-18bfa3558355',
+        keywords: ['ethereum', 'node.js', 'web3.js', 'mysql'] 
+    }, {
+        name: 'justsmartcontracts',
+        title: 'Introducing JustSmartContracts.dev',
+        url: 'https://medium.com/coinmonks/introducing-justsmartcontracts-dev-web-tool-for-interacting-with-ethereum-smart-contracts-da9b5dfe563c',
+        keywords: ['ethereum', 'web3.js']
+    }, {
+        name: 'enums',
+        title: 'Think Twice Before Using Enums in Solidity Smart Contracts',
+        url: 'https://medium.com/coinmonks/beware-the-solidity-enums-5f64b3435fa4',
+        keywords: ['ethereum', 'solidity']
+    }, {
+        name: 'express',
+        title: 'Serving a Node.js Express App From a Subfolder — a Routing Lifehack',
+        url: 'https://medium.com/better-programming/serving-a-node-js-express-app-from-a-subfolder-a-routing-lifehack-a3c88da9840c',
+        keywords: ['node.js', 'express']
+    }],
+
     keywords: {
         'node.js': {
             image: 'nodejs-logo.svg',
@@ -163,5 +185,8 @@ export default {
         'wagtail': {
             image: ''
         },
+        'mysql': {
+            image: ''
+        }
     }
 };
