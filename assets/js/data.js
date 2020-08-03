@@ -106,16 +106,24 @@ export default {
 
     contacts:[{
         name: 'email',
-        url: 'mailto://kondrahano@gmail.com'
+        icon: 'fas fa-envelope',
+        url: 'mailto://kondrahano@gmail.com',
+        title: 'kondrahanov@gmail.com',
     }, {
         name: 'linkedin',
-        url: 'https://www.linkedin.com/in/oleg-kondrakhanov-0142b114a/'
+        icon: 'fab fa-linkedin',
+        url: 'https://www.linkedin.com/in/oleg-kondrakhanov-0142b114a/',
+        title: 'LinkedIn',
     }, {
         name: 'github',
-        url: 'https://github.com/olekon/'
+        icon: 'fab fa-github-square',
+        url: 'https://github.com/olekon/',
+        title: 'GitHub',
     }, {
         name: 'medium',
-        url: 'https://medium.com/@kondrahanov'
+        icon: 'fab fa-medium',
+        url: 'https://medium.com/@kondrahanov',
+        title: 'Medium',
     }],
 
     keywords: {

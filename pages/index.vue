@@ -30,7 +30,7 @@
                 <h2>
                     {{ $t('headers.contacts') }}
                 </h2>
-                <div class="contacts-content">
+                <div class="contacts-content d-flex justify-content-center">
                     <ContactButtons />
                 </div>
             </section>
