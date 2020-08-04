@@ -64,14 +64,18 @@ export default {
         justify-content: center;
 
         cursor: pointer;
-        border: 1px solid rgb(100, 100, 100);
+        border: 1px solid rgb(140, 140, 140);
         background-color: rgb(210, 210, 210);
         border-radius: 8px;
         font-weight: bold;
 
         transition: background-color 0.5s ease-in-out;
+
+        &:hover {
+            background-color: rgb(160, 160, 160);
+        }
         &.active {
-            background-color: rgb(240, 240, 240);
+            background-color: rgb(230, 230, 230);
         }
         &.inactive {
             opacity: 0.4;

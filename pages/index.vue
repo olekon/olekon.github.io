@@ -9,7 +9,7 @@
                 </div>
             </section>
             <section id="portfolio">
-                <h2>
+                <h2 class="mb-4">
                     {{ $t('headers.portfolio') }}
                 </h2>
                 <div class="portfolio-content">

@@ -46,6 +46,12 @@ $card-padding: 1.25rem;
     object-fit: cover;
 }
 
+.project-card-body {
+    .card-title {
+        font-size: 1.3rem;
+    }
+}
+
 .card-img-overlay {
     cursor: pointer;
     position: absolute;

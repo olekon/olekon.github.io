@@ -28,7 +28,7 @@
                 </b-nav-item>
                 <b-nav-item-dropdown
                     class="nav-lang"
-                    :text="$i18n.locale"
+                    :text="$i18n.locale.toUpperCase()"
                 >
                     <b-dropdown-item
                         v-for="lang in $i18n.locales"
@@ -36,7 +36,7 @@
                         :class="`nav-lang-lang.code`"
                         @click="$i18n.setLocale(lang.code)"
                     >
-                        {{ lang.code }}
+                        {{ lang.code.toUpperCase() }}
                     </b-dropdown-item>
                 </b-nav-item-dropdown>
             </b-navbar-nav>
@@ -62,3 +62,5 @@ export default {
     margin-right: 0.5rem;
 }
 </style>
+
+049623275000000000

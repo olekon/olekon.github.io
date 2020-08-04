@@ -74,7 +74,7 @@ export default {
         },
         weight: 5,
         order: 5,
-        coverImage: 'https://i.imgur.com/nxB10vn.png',
+        coverImage: 'https://i.imgur.com/cXTFZLe.png',
         images: [        
             'https://i.imgur.com/hcMLnw2.png',
             'https://i.imgur.com/WZNyT1N.png',
