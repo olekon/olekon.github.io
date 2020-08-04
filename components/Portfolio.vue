@@ -4,7 +4,7 @@
         <div class="portfolio-list">
             <b-row
                 cols="1"
-                cols-lg="2"
+                cols-md="2"
             >
                 <b-col
                     v-for="project in filteredProjects"
@@ -54,7 +54,11 @@ export default {
         flex-grow: 1;
     }
     .project-card {
-        margin-bottom: 2rem;
+        margin-bottom: 3rem;
+    }
+    .col {
+        padding-left: 1.5rem;
+        padding-right: 1.5rem;
     }
 }
 </style>

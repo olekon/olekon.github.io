@@ -37,7 +37,7 @@ export default {
 
     .contact-button {
         display: block;
-        font-size: 18px;
+        font-size: 16px;
         &.email {
             font-size: 20px;
             margin: 2rem 0;

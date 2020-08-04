@@ -86,7 +86,6 @@ export default {
 }
 
 .about-content {
-    padding-top: 20%;
     font-size: 20px;
 }
 </style>
