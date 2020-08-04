@@ -30,14 +30,14 @@ export default {
                 'Я был одним из членов основной команды проекта - начальником технического отдела. \
                 Я занимался изучением возможностей Ethereum, разрабатывал всю блокчейн-часть проекта - смарт-контракты \
                  и модуль кэширования, занимался интеграцией с партнерами и вопросами взаимодействия с командой\
-                разработчиков веб-сайта на аутсорсе',
+                разработчиков веб-сайта на аутсорсе.',
                 'Помимо работ по технической части я также составлял месячные отчеты о прогрессе проекта и писал статьи\
-                в блог компании'
+                в блог компании.'
             ],
             tech: [
                 'Веб-сайт взаимодействует с блокчейном посредством специального АПИ сервиса, написанного на \
                 Node.js (Express). Смарт-контракты спроектированы согласно паттерну "Хранилище/Логика" для \
-                более удобного обновления',
+                более удобного обновления.',
                 'Код смарт-контрактов полностью покрыт юнит-тестами. События (events) блокчейна, относящиеся к\
                 смарт-контрактами проекта, кэшируются специальным модулем, тоже реализованном на Node.js.',
             ],
@@ -49,11 +49,12 @@ export default {
                 'Идея подобного инструмента возникла, пока я работал в команде BCShop. В те дни операции со \
                 смарт-контрактами (например, просмотр прошлых событий) вызывали ряд трудностей, особенно если\
                 создатель контракта не верифицировал его на Etherscan. Поэтому я решил создать простое, но \
-                эффективное приложения для этих целей.',
+                эффективное приложения для решения этих задач.',
                 'С его помощью можно задеплоить смарт-контракт или посмотреть свойства существующего. \
                 Также можно сохранить сгенерированную транзакцию для последующей подписи в другом месте, \
                 проверить события контракта и многое другое.',                
-                'Мой [коллега](https://github.com/32kaa) помог с интеграцией кошелька Metamask для подписи транзакций.',
+                'Мой [хороший друг и коллега](https://www.linkedin.com/in/alexey-kuzmin-a2551a14a/) \
+                помог с интеграцией кошелька Metamask для подписи транзакций.',
             ],
             tech: [
                 'Этот проект был для меня "дверью" в мир современной веб разработки, потому его устройство очень \
@@ -64,68 +65,67 @@ export default {
             ],
         }, 
         'a2.legal': {
-            short: 'MVP web application for a legal company. Users are able to apply for legal help, \
-            then system matches suitable lawyers to solve a case.',
+            short: 'MVP веб-приложения для юридической компании. Пользователи могут оставлять заявки на юридическую \
+            помощь.',
             long: [
-                'That was my first project as part of the [Naulab](https://naulab.pro/) team, kind of "test task". \
-                It was really small - about five pages total. The interesting part was that the app was split into \
-                three parts:',
-                '* App for clients, where they can post their cases',
-                '* App for lawyers, where they can specify their skills and fields of expertise',
-                '* App for authentication and registration, that redirects user to the corresponding app depending \
-                on their role (client/lawyer). I developed a part of frontend - user profile forms and API-wrapper \
-                module with tests for it.'
+                'Это был мой первый проект в качестве члена команды [Naulab](https://naulab.pro/), своего рода\
+                "тестовое задание". Приложение очень маленькое - порядка пяти страниц и разбито на три более мелких:',
+                '* Приложение для клиентов, где они могут оставлять заявки на юридическую помощь;',
+                '* Приложение для юристов, где они указывают набор профессионалных навыков и отраслей права;',
+                '* Приложение для авторизации и регистрации, которое в зависимости от роли пользователя перенаправляет\
+                 его в нужное приложение.',
+                'Я разрабатывал часть фронт-энда - страницы профиля (для юриста и клиента), а также слой работы с АПИ \
+                 и тесты для него.'
             ],
             tech: [
-                'Front-end part is React+Redux, Jest for tests, back-end part is Django Rest Framework + Swagger.'
+                'Фронт-энд часть - React в связке с Redux, Jest для ряда тестов. Бэк-энд - Django Rest Framework + \
+                Swagger.',
             ],
-            links: 'It seems application is not used by the legal company, as I haven’t found it on their website.',
+            links: 'Приложение пока не используется, судя по сайту компании-заказчика.',
         },
         'imaginarium': {
-            short: 'Online version of the "Imaginarium" board game.',
+            short: 'Онлайн-версия настольной игры "Имаджинариум".',
             long: [
-                'In this project I acted as part of the [Naulab](https://naulab.pro/) team',
-                'Here we decided to go with Vue on front-end with back-end based on Django. I’ve implemented most \
-                of the front-end part: developed Vue components and front-end app logic, including interaction via \
-                websockets.'
+                'Я работал над этим проектом в качестве члена команды [Naulab](https://naulab.pro/).',
+                'На этом проекте мы впервые решили попробовать Vue на фронт-энде. Я приложил руку к большинству \
+                фронт-энд части: разрабатывал компоненты Vue, логику "фронта" и взаимодействие через веб-сокеты. ',
             ],
             tech:[
-                'Vue applications (based on BootstrapVue component library) are integrated into Django-rendered \
-                templates. During the development we used webpack dev server.',
-                'Back-end is represented by two servers, both implemented using Django: web server renders website \
-                pages, game server (Django+Redis) handles websockets, game logic and players actions.'
+                'Компоненты Vue (основанные на BootstrapVue) интегрированы в шаблоны Django.',
+                'Бэк-энд представлен двумя серверами: первый рендерит веб-страницы, второй обрабатывает игровые \
+                ситуации через веб-сокеты',
             ],
-            displayName: 'Imaginarium online',
+            displayName: 'Имаджинариум онлайн',
         },
         't&d beauty': {
-            short: 'Web application for T&D Beauty - a beauty services aggregator.',
+            short: 'Веб-приложение для T&D Beauty - агрегатор услуг бьюти-мастеров.',
             long: [
-                'In this project I acted as part of the [Naulab](https://naulab.pro/) team',
-                'My job was to implement almost all the front-end part - Nuxt setup, Vue components, HTML and \
-                CSS (actually SCSS) coding. ',
-                'So far this is my favorite and most interesting project from the list due to variety of front-end \
-                fields to explore and integrate. The hard part was the initial design was remade during the process \
-                and overall development process was not optimal sometimes.',
+                'Я работал над этим проектом в качестве члена команды [Naulab](https://naulab.pro/).',
+                'Моей работой была реализация практически всей фронт-энд части - освоение Nuxt, написание \
+                компонентов Vue, верстка.',
+                'Для меня это наиболее интересный и любимый проект из списка, в основном благодаря широкому\
+                разнообразию областей фронт-энд разработки, с которыми пришлось столкнуться.',
             ],
             tech: [
-                'We needed server-side-rendering for SEO so Nuxt was obvious choice as we really like Vue.',
-                'Apart from login/password authorization we integrated several social networks using OAuth - Facebook,\
-                 Google and Instagram. We also used browser Geolocation and Google Maps API for letting users set \
-                 their location.',
-                'Backend is based on Django Rest Framework',
+                'Серверный рендеринг был обязательной фичей, поэтому выбор пал на Nuxt, т.к. мы очень любим Vue.',
+                'Помимо стандартной авторизации через логин/пароль была добавлена возможность входа через платформы \
+                Facebook и Google. Для определения местонахождения пользователя использовалось встроенное АПИ\
+                браузера и Google-карты.',
+                'Бэк-энд основан на Django Rest Framework.',
             ],
-            links: 'Still in development'
+            links: 'В процессе разработки.'
         }, 
         'ghvs.ru': {
-            short: 'Website for the Main Cathedral of the Russian Armed Forces.',
+            short: 'Сайт Главного храма Вооруженных сил Российской Федерации.',
             long: [
-                'In this project I acted as part of the [Naulab](https://naulab.pro/) team.',
-                'My job was to implement animations using CSS and JQuery - main menu, footer menu, buttons. \
-                I also coded several pages both in Django template and CSS, respecting three responsive design sizes.',
+                'Я работал над этим проектом в качестве члена команды [Naulab](https://naulab.pro/).',
+                'Моей работой была верстка и "оживление" ряда веб-страниц (меню, кнопки и прочее) анимациями с \
+                использованием CSS и jQuery, в трех вариантах адаптивного дизайна. Также я разрабатывал некоторые \
+                шаблоны Django.',
             ],
             tech: [
-                'Back-end is based on Django + Wagtail CMS. Front-end is HTML + SCSS + JQuery for certain complicated \
-                animations, like menus.'
+                'Бэк-энд основан на Django в комбинации с Wagtail CMS. На фронт-энде мы не использовали специальные \
+                фреймворки, только HTML, SCSS и jQuery для особенно сложных анимаций.',
             ]
         }
     }

@@ -46,8 +46,8 @@ export default {
                 myself.',
                 'It is able to deploy a new smart contract or inspect the existing one, generate transaction to sign \
                 later or right now, watch contract’s events, etc.',
-                'A [friend of mine](https://github.com/32kaa) helped with the Metamask wallet integration for \
-                transaction signing.'
+                'A [friend of mine](https://www.linkedin.com/in/alexey-kuzmin-a2551a14a/) helped with the Metamask\
+                 wallet integration for transaction signing.'
             ],
             tech: [
                 'That project was my door to the world of modern web development, so its setup is very basic. \
@@ -58,8 +58,8 @@ export default {
             ],
         }, 
         'a2.legal': {
-            short: 'MVP web application for a legal company. Users are able to apply for legal help, \
-            then system matches suitable lawyers to solve a case.',
+            short: 'MVP web application for a legal company. Users-clients are able to apply for legal help, and \
+            users-lawyers are designated to solve them.',
             long: [
                 'That was my first project as part of the [Naulab](https://naulab.pro/) team, kind of "test task". \
                 It was really small - about five pages total. The interesting part was that the app was split into \
@@ -67,8 +67,8 @@ export default {
                 '* App for clients, where they can post their cases',
                 '* App for lawyers, where they can specify their skills and fields of expertise',
                 '* App for authentication and registration, that redirects user to the corresponding app depending \
-                on their role (client/lawyer). I developed a part of frontend - user profile forms and API-wrapper \
-                module with tests for it.'
+                on their role (client/lawyer).',
+                'I developed a part of frontend - user profile forms and API-wrapper module with tests for it.'
             ],
             tech: [
                 'Front-end part is React+Redux, Jest for tests, back-end part is Django Rest Framework + Swagger.'
@@ -98,13 +98,12 @@ export default {
                 'My job was to implement almost all the front-end part - Nuxt setup, Vue components, HTML and \
                 CSS (actually SCSS) coding. ',
                 'So far this is my favorite and most interesting project from the list due to variety of front-end \
-                fields to explore and integrate. The hard part was the initial design was remade during the process \
-                and overall development process was not optimal sometimes.',
+                fields to explore and integrate.',
             ],
             tech: [
                 'We needed server-side-rendering for SEO so Nuxt was obvious choice as we really like Vue.',
-                'Apart from login/password authorization we integrated several social networks using OAuth - Facebook,\
-                 Google and Instagram. We also used browser Geolocation and Google Maps API for letting users set \
+                'Apart from login/password authorization we integrated several social networks using OAuth - Facebook \
+                and Google. We also used browser Geolocation and Google Maps API for letting users set \
                  their location.',
                 'Backend is based on Django Rest Framework',
             ],
@@ -114,11 +113,11 @@ export default {
             short: 'Website for the Main Cathedral of the Russian Armed Forces.',
             long: [
                 'In this project I acted as part of the [Naulab](https://naulab.pro/) team.',
-                'My job was to implement animations using CSS and JQuery - main menu, footer menu, buttons. \
+                'My job was to implement animations using CSS and jQuery - main menu, footer menu, buttons. \
                 I also coded several pages both in Django template and CSS, respecting three responsive design sizes.',
             ],
             tech: [
-                'Back-end is based on Django + Wagtail CMS. Front-end is HTML + SCSS + JQuery for certain complicated \
+                'Back-end is based on Django + Wagtail CMS. Front-end is HTML + SCSS + jQuery for certain complicated \
                 animations, like menus.'
             ]
         }
