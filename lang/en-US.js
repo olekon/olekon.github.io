@@ -21,10 +21,7 @@ export default {
         p1: 'Hello. My name is Oleg Kondrakhanov',
         p2: 'I am a full stack web and blockchain developer',
         p3: 'You can check my portfolio and blog posts below',
-    },
-    contacts: {
-      
-    },
+    },    
     projects: {
         'bcshop.io': {
             short: 'Marketplace for online goods and services based on the Ethereum blockchain.',
@@ -35,8 +32,8 @@ export default {
                 'Apart from tech duties I also wrote monthly progress reports and articles for the company’s blog.'],
             tech: [
                 'The website communicates with the blockchain via special API service, written in Node.js (Express). \
-                Smart contracts are organized into so called Storage/Logic pattern to make upgrades easier. \
-                All smart contracts are covered with Truffle unit tests. Blockchain events that emitted by BCShop \
+                Smart contracts are organized into so called Storage/Logic pattern to make upgrades easier.',
+                'All smart contracts are covered with Truffle unit tests. Blockchain events that emitted by BCShop \
                 contracts are cached be the caching module, also written in Node.js.'],
             links: 'Unfortunately, the startup ran out of finances and has to be closed.',
         },
@@ -53,10 +50,10 @@ export default {
                 transaction signing.'
             ],
             tech: [
-                'That project was my door to the world of front-end development, so its setup is very basic. \
-                Front-end is pure React and Ant Design components, smart contracts’ data is stored inside a \
+                'That project was my door to the world of modern web development, so its setup is very basic. \
+                Front-end is pure React and Ant Design UI components, smart contracts’ data is stored inside a \
                 browser’s local storage. I also used Storybook when writing my own components.',
-                'Back end is a simple Express.js application that is used mostly for proxying the requests \
+                'Back end is a simple Node.js-Express application that is used mostly for proxying the requests \
                 to third-party APIs.'
             ],
         }, 
