@@ -32,7 +32,7 @@ export default {
         links: false,        
         weight: 4,
         order: 2,
-        coverImage: 'https://i.imgur.com/rHMrv3d.png',
+        coverImage: 'https://i.imgur.com/68JnzMV.jpg',
         images: [            
             'https://i.imgur.com/rHMrv3d.png',
             'https://i.imgur.com/JjhNYpL.png',
@@ -46,7 +46,7 @@ export default {
         },
         weight: 5,
         order: 3,
-        coverImage: 'https://i.imgur.com/EgXd9J3.png',
+        coverImage: 'https://i.imgur.com/626wVrs.png',
         images: [        
             'https://i.imgur.com/m9hPCeh.png',
             'https://i.imgur.com/ZkFKSeB.png',
@@ -59,7 +59,7 @@ export default {
         links: false,
         weight: 5,
         order: 4,
-        coverImage: 'https://i.imgur.com/hiCPgMf.png',
+        coverImage: 'https://i.imgur.com/9nmaSAw.png',
         images: [        
             'https://i.imgur.com/hiCPgMf.png',
             'https://i.imgur.com/EHuQRVi.png',
@@ -74,7 +74,7 @@ export default {
         },
         weight: 5,
         order: 5,
-        coverImage: 'https://i.imgur.com/hcMLnw2.png',
+        coverImage: 'https://i.imgur.com/nxB10vn.png',
         images: [        
             'https://i.imgur.com/hcMLnw2.png',
             'https://i.imgur.com/WZNyT1N.png',
