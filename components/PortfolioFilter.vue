@@ -2,7 +2,7 @@
     <ul class="portfolio-filters d-flex flex-wrap">
         <li
             class="filter-btn all-filter"
-            :class="{active: activeFilter == null}"
+            :class="getClass(null)"
             @click="clearFilter"
         >
             {{ $t('actions.showAll') }}
@@ -11,7 +11,7 @@
             v-for="item in filters"
             :key="item.name"
             class="filter-btn"
-            :class="{active: activeFilter == item}"
+            :class="getClass(item)"
             @click="chooseFilter(item)"
         >
             <b-img
@@ -36,6 +36,12 @@ export default {
         getLogo(filter) {
             return require(`~/assets/images/${filter.image}`);
         },
+        getClass(item) {
+            return {
+                active: this.activeFilter == item,
+                inactive: this.activeFilter && this.activeFilter != item
+            };
+        },
         ...mapMutations(['clearFilter', 'chooseFilter'])
     }
 };
@@ -47,20 +53,28 @@ export default {
     list-style: none;
 
     .filter-btn {
+        margin: 0.3rem;
+        padding: 0.5rem 1rem 0.5rem 0.5rem;
+
         min-width: 4rem;
         height: 3rem;
+
         display: flex;
         align-items: center;
         justify-content: center;
 
         cursor: pointer;
-        padding: 0.5rem;
-        border: 1px solid black;
-        margin: 0.5rem;
+        border: 1px solid rgb(100, 100, 100);
+        background-color: rgb(210, 210, 210);
+        border-radius: 8px;
+        font-weight: bold;
+
+        transition: background-color 0.5s ease-in-out;
         &.active {
-            border: none;
-            font-weight: bold;
-            background-color: wheat;
+            background-color: rgb(240, 240, 240);
+        }
+        &.inactive {
+            opacity: 0.4;
         }
         &::marker {
             display: none;
