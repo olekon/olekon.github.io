@@ -15,16 +15,16 @@
         >
             <b-navbar-nav class="ml-auto">
                 <b-nav-item href="#about">
-                    {{ $t('headers.about') }}
+                    <i class="fas fa-user" /> {{ $t('headers.about') }}
                 </b-nav-item>
                 <b-nav-item href="#portfolio">
-                    {{ $t('headers.portfolio') }}
+                    <i class="fas fa-briefcase" /> {{ $t('headers.portfolio') }}
                 </b-nav-item>
                 <b-nav-item href="#posts">
-                    {{ $t('headers.posts') }}
+                    <i class="fas fa-pen-alt" /> {{ $t('headers.posts') }}
                 </b-nav-item>
                 <b-nav-item href="#contacts">
-                    {{ $t('headers.contacts') }}
+                    <i class="fas fa-paper-plane" /> {{ $t('headers.contacts') }}
                 </b-nav-item>
                 <b-nav-item-dropdown
                     class="nav-lang"
@@ -55,3 +55,10 @@ export default {
     }
 };
 </script>
+
+<style lang="scss">
+.nav-item {
+    font-size: 20px;
+    margin-right: 0.5rem;
+}
+</style>
