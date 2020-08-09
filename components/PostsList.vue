@@ -5,6 +5,8 @@
         :per-page="1"
         :per-page-custom="[[768, 2]]"
         navigation-enabled
+        :navigation-next-label="navNextLabel"
+        :navigation-prev-label="navPrevLabel"
     >
         <slide
             v-for="post in posts"
@@ -39,6 +41,12 @@ export default {
     computed: {
         posts() {
             return data.posts;
+        },
+        navNextLabel() {
+            return '<i class="fas fa-angle-right" />';
+        },
+        navPrevLabel() {
+            return '<i class="fas fa-angle-left" />';
         }
     },
 
