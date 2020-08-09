@@ -24,7 +24,7 @@ export default {
     },    
     projects: {
         'bcshop.io': {
-            short: 'Marketplace for online goods and services based on the Ethereum blockchain.',
+            short: 'Marketplace for digital goods and services based on the Ethereum blockchain.',
             long: [
                 'I was one of the project’s core team members, the CTO. I researched Ethereum capabilities \
             and features, developed blockchain related modules - smart contracts and caching module, communicated \
