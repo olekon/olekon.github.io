@@ -10,7 +10,10 @@
     >
         <div class="details-content h-100">
             <div class="details-description mt-2">
-                <div class="details-description-long">
+                <div class="details-description-short">
+                    {{ activeProject.short }}
+                </div>
+                <div class="details-description-long mt-4">
                     <p
                         v-for="(item, index) in activeProject.long"
                         :key="index"
@@ -99,6 +102,9 @@ export default {
 </script>
 
 <style lang="scss">
+.details-description-short {
+    font-style: italic;
+}
 .details-description-keywords {
     flex-wrap: wrap;
     .details-description-keyword {
