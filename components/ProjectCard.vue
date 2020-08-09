@@ -5,7 +5,10 @@
         class="project-card"
         body-class="project-card-body"
     >
-        <b-card-body overlay>
+        <b-card-body
+            overlay
+            @click.stop.prevent="onCardClick"
+        >
             <div class="project-card-overlay d-flex flex-column justify-content-between align-items-center">
                 <h4 class="project-subtitle text-light">
                     {{ project.short }}
@@ -35,6 +38,11 @@ export default {
             required: true,
         }
     },
+    methods: {
+        onCardClick() {
+            //keep for mobile hover 
+        }
+    }
 };
 </script>
 
@@ -61,7 +69,8 @@ $card-padding: 1.25rem;
     left: -$card-padding;
     padding: $card-padding;
 
-    &:hover {
+    &:hover,
+    &:active {
         .project-card-overlay {
             opacity: 1;
             background: linear-gradient(
