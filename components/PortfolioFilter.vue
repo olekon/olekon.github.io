@@ -53,7 +53,7 @@ export default {
     list-style: none;
 
     .filter-btn {
-        margin: 0.2rem;
+        margin: 0.1rem;
         padding: 0.3rem 0.5rem 0.3rem 0.3rem;
 
         min-width: 3.5rem;

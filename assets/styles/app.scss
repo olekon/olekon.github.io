@@ -23,6 +23,26 @@ section {
   &#contacts {
     min-height: 50vh;
   }
+
+  $color1: #b0b0b090;
+  $color2: #ffffff90;
+  $color3: #afa0ae;
+  $color4: #ffffff;
+
+  & > h2 {
+    //background: linear-gradient(to right, $color1, $color2);
+    background: linear-gradient(to right, $color1, 30%, $color2 80%),
+      linear-gradient(170deg, $color3, 30%, $color4 65%);
+
+    //linear-gradient(45deg, $color1, $color2);
+
+    font-family: "Roboto Condensed", sans-serif;
+    font-weight: bold;
+    padding: 2rem;
+    text-align: left;
+    text-transform: uppercase;
+    //background: linear-gradient(170deg, rgba(140, 140, 140, 0.7), 30%, white),;
+  }
 }
 
 .brand {
