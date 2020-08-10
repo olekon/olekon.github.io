@@ -53,10 +53,10 @@ export default {
     list-style: none;
 
     .filter-btn {
-        margin: 0.3rem;
-        padding: 0.5rem 1rem 0.5rem 0.5rem;
+        margin: 0.2rem;
+        padding: 0.3rem 0.5rem 0.3rem 0.3rem;
 
-        min-width: 4rem;
+        min-width: 3.5rem;
         height: 3rem;
 
         display: flex;
@@ -67,6 +67,8 @@ export default {
         border: 1px solid rgb(140, 140, 140);
         background-color: rgb(210, 210, 210);
         border-radius: 8px;
+
+        font-size: 0.8rem;
         font-weight: bold;
 
         transition: background-color 0.5s ease-in-out;
