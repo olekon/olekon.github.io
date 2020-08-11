@@ -1,4 +1,5 @@
 @import "../../node_modules/@fortawesome/fontawesome-free/css/all.min.css";
+@import "~bootstrap/scss/bootstrap-grid.scss";
 
 html {
   scroll-behavior: smooth;
@@ -10,7 +11,7 @@ body {
 
 main {
   width: 100%;
-  padding-bottom: 2rem;
+  padding-bottom: 4rem;
   overflow: hidden;
 }
 
@@ -22,8 +23,9 @@ section {
   background-color: white;
   min-height: 100vh;
   width: 100%;
-  padding-top: 6rem;
+  padding-top: 5rem;
 
+  &#about,
   &#posts,
   &#contacts {
     min-height: 90vh;

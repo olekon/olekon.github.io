@@ -4,8 +4,12 @@
             <section id="about">
                 <div class="about-content">
                     <h3>{{ $t('about.p1') }}</h3>
-                    <p>{{ $t('about.p2') }}</p>
-                    <p>{{ $t('about.p3') }}</p>
+                    <p class="p1">
+                        {{ $t('about.p2') }}
+                    </p>
+                    <p class="p2">
+                        {{ $t('about.p3') }}
+                    </p>
                 </div>
             </section>
             <section id="portfolio">
@@ -51,6 +55,9 @@ export default {
     },
     data() {
         return {
+            aboutHeader: '#about h3',
+            aboutP1: '#about .p1',
+            aboutP2: '#about .p2',
             sections: [{
                 header: '#portfolio h2',
                 content: '.portfolio-content',
@@ -66,7 +73,6 @@ export default {
     },
     mounted() {
         this.createAnimations();
-
     },
 
     methods: {
@@ -86,13 +92,15 @@ export default {
                 }
             });
             tl.from(header, { xPercent: -120, duration: 1, ease: 'power3' });
-            tl.from(content, { xPercent: 110, duration: 1.5, ease: 'power3' }, '-=0');
+            tl.from(content, { xPercent: 110, duration: 1.5, ease: 'power3' });
         }
     }
 };
 </script>
 
-<style>
+<style lang="scss">
+@import "~bootstrap/scss/bootstrap-grid.scss";
+
 .container {
     margin: 0 auto;
     min-height: 100vh;
@@ -127,10 +135,20 @@ export default {
 
 .about-content {
     padding-top: 10%;
+
     font-size: 20px;
+    @include media-breakpoint-up(sm) {
+        font-size: 24px;
+    }
+    h3 {
+        font-size: 24px;
+        @include media-breakpoint-up(sm) {
+            font-size: 30px;
+        }
+    }
 }
 
 .posts-content {
-    padding-top: 5rem;
+    padding-top: 3rem;
 }
 </style>
