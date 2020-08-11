@@ -1,7 +1,7 @@
 <template>
     <b-navbar
         id="main-nav"
-        sticky
+        fixed="top"
         toggleable="lg"
         variant="light"
     >
@@ -33,7 +33,7 @@
                     <b-dropdown-item
                         v-for="lang in $i18n.locales"
                         :key="lang.code"
-                        :class="`nav-lang-lang.code`"
+                        :class="`nav-lang-${lang.code}`"
                         @click="$i18n.setLocale(lang.code)"
                     >
                         {{ lang.code.toUpperCase() }}
@@ -62,5 +62,3 @@ export default {
     margin-right: 0.5rem;
 }
 </style>
-
-049623275000000000
