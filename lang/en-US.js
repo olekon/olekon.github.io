@@ -120,6 +120,18 @@ export default {
                 'Back-end is based on Django + Wagtail CMS. Front-end is HTML + SCSS + jQuery for certain complicated \
                 animations, like menus.'
             ]
+        },
+        'portfolio': {
+            displayName: 'My portfolio',
+            short: 'Website with the showcase of my work',
+            long:[
+                'That\'s the website you are currently looking at :)',
+            ],
+            tech: [
+                'Here I used Nuxt as static site generator. Russian and English locales are handled with nuxt-i18n.',
+                'I also used GSAP to implement several complicated animations like scroll-based moving of \
+                headers and sections.'
+            ]
         }
     }
 };

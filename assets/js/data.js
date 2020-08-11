@@ -80,6 +80,18 @@ export default {
             'https://i.imgur.com/WZNyT1N.png',
             'https://i.imgur.com/cEkyYEK.png',
         ]
+    },  {
+        name: 'portfolio',
+        keywords: ['nuxt', 'vue', 'bootstrap', 'gsap'],
+        links: {
+            website: 'https://olekon.github.io/',
+            source: 'https://github.com/olekon/olekon.github.io/tree/v2-nuxt'
+        },
+        weight: 5,
+        order: 6,
+        coverImage: 'https://i.imgur.com/mxpg7LY.png',
+        images: [        
+        ]
     }],
 
     posts: [{
