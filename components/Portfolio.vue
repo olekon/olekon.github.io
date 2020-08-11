@@ -39,12 +39,22 @@ export default {
     computed: {
         ...mapGetters(['filteredProjects'])
     },
+    watch: {
+        filteredProjects: function (newItems, oldItems) {
+            if (newItems.length !== oldItems.length) {
+                //portfolio height changes - must recalculate trigger positions
+                this.$nextTick(() => {
+                    this.$scrollTrigger.refresh();
+                });
+            }
+        }
+    },
     methods: {
         onProjectClick(project) {
             this.chooseActiveProject(project);
         },
         ...mapMutations(['chooseActiveProject'])
-    }
+    },
 };
 </script>
 

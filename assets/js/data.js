@@ -107,7 +107,7 @@ export default {
     contacts:[{
         name: 'email',
         icon: 'fas fa-envelope',
-        url: 'mailto://kondrahano@gmail.com',
+        url: 'mailto:kondrahanov@gmail.com',
         title: 'kondrahanov@gmail.com',
     }, {
         name: 'linkedin',

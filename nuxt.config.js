@@ -41,6 +41,7 @@ export default {
     plugins: [
         '~/plugins/i18n.js',
         '~/plugins/carousel.client.js',
+        '~/plugins/gsap.js',
     ],
     /*
   ** Auto import components
@@ -96,7 +97,8 @@ export default {
   */
     build: {
         transpile: [
-            'vue-markdown'
+            'gsap',
+            'vue-markdown',
         ],
         extend(config, ctx) {
             if (ctx && ctx.isClient) {

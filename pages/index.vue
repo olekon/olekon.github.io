@@ -48,6 +48,46 @@ export default {
         ContactButtons,
         Portfolio,
         PostsList
+    },
+    data() {
+        return {
+            sections: [{
+                header: '#portfolio h2',
+                content: '.portfolio-content',
+            }, {
+                header: '#posts h2',
+                content: '.posts-content',
+            }, {
+                header: '#contacts h2',
+                content: '.contacts-content',
+            }]
+
+        };
+    },
+    mounted() {
+        this.createAnimations();
+
+    },
+
+    methods: {
+        createAnimations() {
+            this.sections.forEach(section => {
+                this.createSectionTimeline(section);
+            });
+        },
+
+        createSectionTimeline({ header, content }) {
+            const tl = this.$gsap.timeline({
+                scrollTrigger: {
+                    trigger: header,
+                    start: 'bottom 90%',
+                    end: 'top 15%',
+                    scrub: true,
+                }
+            });
+            tl.from(header, { xPercent: -120, duration: 1, ease: 'power3' });
+            tl.from(content, { xPercent: 110, duration: 1.5, ease: 'power3' }, '-=0');
+        }
     }
 };
 </script>
@@ -86,6 +126,11 @@ export default {
 }
 
 .about-content {
+    padding-top: 10%;
     font-size: 20px;
+}
+
+.posts-content {
+    padding-top: 5rem;
 }
 </style>

@@ -72,6 +72,11 @@ export default {
 
 .VueCarousel-navigation-button {
     padding: 0 !important;
+
+    &.VueCarousel-navigation-next,
+    &.VueCarousel-navigation-prev {
+        transform: translateY(-50%);
+    }
 }
 
 .VueCarousel-dot-container {
