@@ -1,10 +1,10 @@
 <template>
     <b-card
-        :img-src="project.coverImage"
         :title="project.displayName"
         class="project-card"
         body-class="project-card-body"
     >
+        <b-card-img-lazy :src="project.coverImage" />
         <b-card-body
             overlay
             @click.stop.prevent="onCardClick"
@@ -55,6 +55,7 @@ $card-padding: 1.25rem;
 }
 
 .project-card-body {
+    padding: 1rem 0 0 0;
     .card-title {
         font-size: 1.3rem;
     }
