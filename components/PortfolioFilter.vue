@@ -1,9 +1,9 @@
 <template>
     <ul class="portfolio-filters d-flex flex-wrap">
         <li
-            class="filter-btn all-filter"
+            class="filter-btn"
             :class="getClass(null)"
-            @click="clearFilter"
+            @click="onFilterClick(null)"
         >
             {{ $t('actions.showAll') }}
         </li>
@@ -12,7 +12,7 @@
             :key="item.name"
             class="filter-btn"
             :class="getClass(item)"
-            @click="chooseFilter(item)"
+            @click="onFilterClick(item)"
         >
             <b-img
                 class="logo"
@@ -39,8 +39,16 @@ export default {
         getClass(item) {
             return {
                 active: this.activeFilter == item,
-                inactive: this.activeFilter && this.activeFilter != item
+                inactive: this.activeFilter && this.activeFilter != item,
+                ['filter-' + (item ? item.name : 'all')]: true,
             };
+        },
+        onFilterClick(filter) {
+            if (filter) {
+                this.chooseFilter(filter);
+            } else {
+                this.clearFilter();
+            }
         },
         ...mapMutations(['clearFilter', 'chooseFilter'])
     }
