@@ -47,11 +47,48 @@ export default {
                     this.$scrollTrigger.refresh();
                 });
             }
+            this.$nextTick(() => {
+                this.animateCards();
+            });
         }
     },
     methods: {
         onProjectClick(project) {
             this.chooseActiveProject(project);
+        },
+        animateCards() {
+            const ease = 'back';
+            const duration = 1;
+
+            const tl = this.$gsap.timeline({});
+            const length = this.filteredProjects.length;
+
+            for (let i = 0; i < length; ++i) {
+                const delay = i ? duration - 0.1 : 0;
+                tl.fromTo(
+                    `.portfolio-list .portfolio-col:nth-child(${i + 1})`,
+                    {
+                        rotationX: 270,
+                    },
+                    {
+                        rotationX: 0,
+                        ease,
+                        duration
+                    },
+                    `-=${delay}`
+                );
+            }
+
+            // this.$gsap.fromTo(
+            //     '.project-card',
+            //     {
+            //         rotationX: 180,
+            //     },
+            //     {
+            //         rotationX: 0,
+            //         ease,
+            //         duration: 2
+            //     });
         },
         ...mapMutations(['chooseActiveProject'])
     },
