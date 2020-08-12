@@ -5,7 +5,10 @@
         toggleable="lg"
         variant="light"
     >
-        <b-navbar-brand class="brand">
+        <b-navbar-brand
+            class="brand"
+            href="/"
+        >
             <h1><span class="name">Oleg Kondrakhanov</span>Full stack web developer</h1>
         </b-navbar-brand>
         <b-navbar-toggle target="nav-collapse" />

@@ -8,6 +8,10 @@ export default {
         techDetails: 'Tech details',
         links: 'Links'
     },
+    errors: {
+        error404: 'Sorry, but there is no such page', 
+        common: 'Sorry, something went wrong',
+    },
     links: {
         website: 'Website',
         source: 'Source code'
@@ -15,7 +19,8 @@ export default {
     actions: {
         details: 'Details...',
         showAll: 'All',
-        readPost: 'Read...'
+        readPost: 'Read...',
+        toHomePage: 'Back to home',
     },
     about: {
         p1: 'Hello. My name is Oleg Kondrakhanov',
