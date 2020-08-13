@@ -10,7 +10,7 @@
         </div>
 
         <div class="home-link mt-4">
-            <nuxt-link to="/">
+            <nuxt-link :to="localePath('/')">
                 {{ $t('actions.toHomePage') }}
             </nuxt-link>
         </div>

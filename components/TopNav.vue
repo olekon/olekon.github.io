@@ -5,12 +5,12 @@
         toggleable="lg"
         variant="light"
     >
-        <b-navbar-brand
+        <nuxt-link
             class="brand"
-            href="/"
+            :to="localePath('/')"
         >
             <h1><span class="name">Oleg Kondrakhanov</span>Full stack web developer</h1>
-        </b-navbar-brand>
+        </nuxt-link>
         <b-navbar-toggle target="nav-collapse" />
         <b-collapse
             id="nav-collapse"
@@ -66,6 +66,9 @@ export default {
 }
 
 .brand {
+    &:hover {
+        text-decoration: none;
+    }
     h1 {
         font-size: 14px;
         color: #817181;
