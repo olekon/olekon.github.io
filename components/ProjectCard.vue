@@ -15,8 +15,7 @@
                 </h4>
                 <KeywordsList :keywords="project.keywords" />
                 <b-button
-                    class="w-75"
-                    variant="light"
+                    class="w-75 btn-animated"
                     @click="$emit('click')"
                 >
                     {{ $t('actions.details') }}
@@ -82,9 +81,9 @@ $card-padding: 1.25rem;
             .project-card-overlay {
                 opacity: 1;
                 background: linear-gradient(
-                    to top,
-                    rgba(30, 30, 30, 0.8),
-                    rgba(10, 10, 10, 0.8)
+                    to bottom,
+                    rgba(30, 30, 30, 0.9),
+                    rgba(10, 10, 10, 0.9)
                 );
             }
         }

@@ -17,8 +17,7 @@
                 <h5>{{ post.title }}</h5>
                 <KeywordsList :keywords="post.keywords" />
                 <b-button
-                    variant="primary"
-                    class="w-75"
+                    class="w-75 btn-animated"
                     :href="post.url"
                     target="_blank"
                 >
@@ -67,7 +66,7 @@ export default {
         padding: 1rem;
 
         // background: linear-gradient(rgb(160, 160, 160), rgb(200, 200, 200));
-        background: linear-gradient(to top, #84a9acce, 65%, #e4e3e3ce);
+        background: linear-gradient(to top, #84a9acff, 65%, #e4e3e3ce);
 
         h5 {
             font-size: 1.25rem;

@@ -52,14 +52,63 @@ section {
   }
 }
 
-.brand {
-  h1 {
-    font-size: 14px;
-    color: #817181;
-    .name {
-      display: block;
-      font-size: 20px;
-      color: #414121;
-    }
+.btn-animated {
+  $text-primary: white;
+  $transform-origin: top center;
+  $transition-func: cubic-bezier(0.165, 0.84, 0.44, 1);
+
+  z-index: 5;
+  color: $text-primary !important;
+  background-color: transparent;
+  border: 2px solid $text-primary;
+  border-radius: 4px;
+
+  text-transform: uppercase;
+  letter-spacing: 0.03em;
+
+  position: relative;
+  box-shadow: none;
+  transition: color 0.8s $transition-func, border 0.8s $transition-func;
+
+  &:after {
+    content: "";
+    background-color: $text-primary;
+    border-radius: 2px;
+    display: block;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: -1;
+
+    transform: scaleX(0);
+    -ms-transform: scaleX(0);
+
+    -webkit-transform-origin: $transform-origin;
+    -ms-transform-origin: $transform-origin;
+    transform-origin: $transform-origin;
+
+    transition: transform 0.5s $transition-func 0s,
+      -webkit-transform 0.5s $transition-func 0s;
+    -o-transition: transform 0.5s $transition-func 0s;
+  }
+
+  &:hover {
+    background-color: transparent;
+    color: black !important;
+    box-shadow: none;
+    border: 2px solid transparent;
+  }
+
+  &:hover:after {
+    transform: scaleX(1);
+    transform-origin: top center;
+  }
+
+  &:active,
+  &:focus {
+    background-color: transparent !important;
+    border-color: $text-primary !important;
   }
 }

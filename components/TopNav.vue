@@ -64,4 +64,16 @@ export default {
     font-size: 20px;
     margin-right: 0.5rem;
 }
+
+.brand {
+    h1 {
+        font-size: 14px;
+        color: #817181;
+        .name {
+            display: block;
+            font-size: 20px;
+            color: #414121;
+        }
+    }
+}
 </style>
