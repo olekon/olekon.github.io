@@ -51,7 +51,7 @@ $card-padding: 1.25rem;
 
 .project-card {
     border-radius: 0;
-    background: linear-gradient(to right, #3b6978e0, 15%, #84a9ace0);
+    background: linear-gradient(to right, #3b6978b0, 30%, #84a9ac80);
     border-color: #e0e0e0;
     .card-img {
         border-radius: 0;
@@ -82,8 +82,9 @@ $card-padding: 1.25rem;
             .project-card-overlay {
                 opacity: 1;
                 background: linear-gradient(
-                    rgba(30, 30, 30, 0.9),
-                    rgba(20, 20, 20, 0.8)
+                    to top,
+                    rgba(30, 30, 30, 0.8),
+                    rgba(10, 10, 10, 0.8)
                 );
             }
         }
@@ -92,7 +93,7 @@ $card-padding: 1.25rem;
             width: 100%;
             height: 100%;
             opacity: 0;
-            transition: all 0.3s ease-in;
+            transition: all 0.4s ease-in;
 
             .project-subtitle {
                 font-size: 14px;

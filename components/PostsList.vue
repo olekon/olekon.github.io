@@ -67,7 +67,7 @@ export default {
         padding: 1rem;
 
         // background: linear-gradient(rgb(160, 160, 160), rgb(200, 200, 200));
-        background: linear-gradient(to bottom, #84a9acce, 75%, #204051ce);
+        background: linear-gradient(to top, #84a9acce, 65%, #e4e3e3ce);
 
         h5 {
             font-size: 1.25rem;
