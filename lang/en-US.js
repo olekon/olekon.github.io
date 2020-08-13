@@ -135,7 +135,7 @@ export default {
             tech: [
                 'Here I used Nuxt as static site generator. Russian and English locales are handled with nuxt-i18n.',
                 'I also used GSAP to implement several complicated animations like scroll-based moving of \
-                headers and sections.'
+                headers and sections, or project cards flipping when switching filters.'
             ]
         }
     }
