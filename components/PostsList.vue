@@ -66,7 +66,15 @@ export default {
         height: 16rem;
         padding: 1rem;
 
-        background: linear-gradient(rgb(160, 160, 160), rgb(200, 200, 200));
+        // background: linear-gradient(rgb(160, 160, 160), rgb(200, 200, 200));
+        background: linear-gradient(to bottom, #84a9acce, 75%, #204051ce);
+
+        h5 {
+            font-size: 1.25rem;
+            font-family: "Roboto condensed", sans-serif;
+            font-weight: bold;
+            letter-spacing: 0.01em;
+        }
     }
 }
 
@@ -83,6 +91,7 @@ export default {
     margin-top: 0 !important;
 
     .VueCarousel-dot {
+        padding: 0 10px !important;
         margin-top: 0 !important;
     }
 }

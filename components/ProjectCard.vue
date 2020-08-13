@@ -49,46 +49,54 @@ export default {
 <style lang="scss">
 $card-padding: 1.25rem;
 
-.project-card .card-img {
-    height: 200px;
-    object-fit: cover;
-}
-
-.project-card-body {
-    padding: 1rem 0 0 0;
-    .card-title {
-        font-size: 1.3rem;
+.project-card {
+    border-radius: 0;
+    background: linear-gradient(to right, #3b6978e0, 15%, #84a9ace0);
+    border-color: #e0e0e0;
+    .card-img {
+        border-radius: 0;
+        height: 200px;
+        object-fit: cover;
     }
-}
-
-.card-img-overlay {
-    cursor: pointer;
-    position: absolute;
-    top: -$card-padding;
-    right: -$card-padding;
-    bottom: -$card-padding;
-    left: -$card-padding;
-    padding: $card-padding;
-
-    &:hover,
-    &:active {
-        .project-card-overlay {
-            opacity: 1;
-            background: linear-gradient(
-                rgba(30, 30, 30, 0.9),
-                rgba(20, 20, 20, 0.8)
-            );
+    .project-card-body {
+        padding: 1rem 0 0 0;
+        .card-title {
+            font-size: 1.3rem;
+            font-weight: bold;
+            letter-spacing: 0.01em;
+            font-family: "Roboto condensed", sans-serif;
         }
     }
-    .project-card-overlay {
-        padding: 1rem;
-        width: 100%;
-        height: 100%;
-        opacity: 0;
-        transition: all 0.3s ease-in;
 
-        .project-subtitle {
-            font-size: 14px;
+    .card-img-overlay {
+        cursor: pointer;
+        position: absolute;
+        top: -$card-padding;
+        right: -$card-padding;
+        bottom: -$card-padding;
+        left: -$card-padding;
+        padding: $card-padding;
+
+        &:hover,
+        &:active {
+            .project-card-overlay {
+                opacity: 1;
+                background: linear-gradient(
+                    rgba(30, 30, 30, 0.9),
+                    rgba(20, 20, 20, 0.8)
+                );
+            }
+        }
+        .project-card-overlay {
+            padding: 1rem;
+            width: 100%;
+            height: 100%;
+            opacity: 0;
+            transition: all 0.3s ease-in;
+
+            .project-subtitle {
+                font-size: 14px;
+            }
         }
     }
 }

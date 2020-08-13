@@ -111,7 +111,7 @@ export default {
         keywords: ['ethereum', 'solidity']
     }, {
         name: 'express',
-        title: 'Serving a Node.js Express App From a Subfolder — a Routing Lifehack',
+        title: 'Serving a Node.js Express App From a Subfolder',
         url: 'https://medium.com/better-programming/serving-a-node-js-express-app-from-a-subfolder-a-routing-lifehack-a3c88da9840c',
         keywords: ['node.js', 'express']
     }],
