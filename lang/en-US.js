@@ -63,8 +63,7 @@ export default {
             ],
         }, 
         'a2.legal': {
-            short: 'MVP web application for a legal company. Users-clients are able to apply for legal help, and \
-            users-lawyers are designated to solve them.',
+            short: 'MVP web application for a legal company.',
             long: [
                 'That was my first project as part of the [Naulab](https://naulab.pro/) team, kind of "test task". \
                 It was really small - about five pages total. The interesting part was that the app was split into \

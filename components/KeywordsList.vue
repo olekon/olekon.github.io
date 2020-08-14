@@ -22,8 +22,15 @@ export default {
 </script>
 
 <style lang="scss">
+@import "~bootstrap/scss/bootstrap-grid.scss";
 .keywords-list {
     .keywords-item {
+        @include media-breakpoint-down(md) {
+            font-size: 12px;
+            padding: 2px 4px;
+            margin: 2px;
+            border-radius: 4px;
+        }
         padding: 4px 8px;
         border-radius: 8px;
         margin: 4px;

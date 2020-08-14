@@ -96,12 +96,16 @@ export default {
 </script>
 
 <style lang="scss">
+@import "~bootstrap/scss/bootstrap-grid.scss";
 .portfolio-list {
     .portfolio-col {
         flex-grow: 1;
     }
     .project-card {
         margin-bottom: 3rem;
+        @include media-breakpoint-down(sm) {
+            margin-bottom: 1.5rem;
+        }
     }
     .col {
         padding-left: 1.5rem;

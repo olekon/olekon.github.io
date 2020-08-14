@@ -7,10 +7,7 @@ export default {
         weight: 4,
         order: 0,
         coverImage: 'https://i.imgur.com/MVVB4Sg.png',
-        images: [            
-            'https://i.imgur.com/7yF9lOp.png',
-            'https://i.imgur.com/WfIWCTT.png',
-            'https://i.imgur.com/G4iYdHp.png'
+        images: [                       
         ],
     }, {
         name: 'justsmartcontracts.dev',
@@ -21,10 +18,8 @@ export default {
         },
         weight: 5,
         order: 1,
-        coverImage: 'https://i.imgur.com/eVbKnxc.png',
-        images: [        
-            'https://i.imgur.com/TgDMrtF.png',
-            'https://i.imgur.com/Oa3UQWC.png',
+        coverImage: 'https://i.imgur.com/QQ88akc.png',
+        images: [                    
         ]
     }, {
         name: 'A2.legal',
@@ -33,10 +28,7 @@ export default {
         weight: 4,
         order: 2,
         coverImage: 'https://i.imgur.com/68JnzMV.jpg',
-        images: [            
-            'https://i.imgur.com/rHMrv3d.png',
-            'https://i.imgur.com/JjhNYpL.png',
-            'https://i.imgur.com/KhRDjjk.png'
+        images: [                      
         ],
     }, {
         name: 'Imaginarium',
@@ -46,12 +38,8 @@ export default {
         },
         weight: 5,
         order: 3,
-        coverImage: 'https://i.imgur.com/626wVrs.png',
-        images: [        
-            'https://i.imgur.com/m9hPCeh.png',
-            'https://i.imgur.com/ZkFKSeB.png',
-            'https://i.imgur.com/cIKoInQ.png',
-            'https://i.imgur.com/5uW8KXd.png'
+        coverImage: 'https://i.imgur.com/0OLFGBg.png',
+        images: [                
         ]
     }, {
         name: 'T&D Beauty',
@@ -60,11 +48,7 @@ export default {
         weight: 5,
         order: 4,
         coverImage: 'https://i.imgur.com/9nmaSAw.png',
-        images: [        
-            'https://i.imgur.com/hiCPgMf.png',
-            'https://i.imgur.com/EHuQRVi.png',
-            'https://i.imgur.com/i3POedr.png',
-            'https://i.imgur.com/wMzjwpk.png',
+        images: [                    
         ]
     }, {
         name: 'ghvs.ru',
@@ -75,10 +59,7 @@ export default {
         weight: 5,
         order: 5,
         coverImage: 'https://i.imgur.com/cXTFZLe.png',
-        images: [        
-            'https://i.imgur.com/hcMLnw2.png',
-            'https://i.imgur.com/WZNyT1N.png',
-            'https://i.imgur.com/cEkyYEK.png',
+        images: [                   
         ]
     },  {
         name: 'portfolio',
