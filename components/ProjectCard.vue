@@ -18,7 +18,7 @@
                 </h4>
                 <KeywordsList
                     :keywords="project.keywords"
-                    class="mb-2"
+                    class="mb-1"
                 />
                 <b-button
                     class="w-75 details-btn btn-animated"
@@ -63,6 +63,10 @@ $card-padding: 1.25rem;
     .img-wrapper {
         position: relative;
         padding-top: 40%;
+
+        @include media-breakpoint-down(md) {
+            padding-top: 50%;
+        }
         .card-img {
             border-radius: 0;
             object-fit: cover;
@@ -128,7 +132,7 @@ $card-padding: 1.25rem;
                 @include media-breakpoint-down(md) {
                     font-size: 13px;
                 }
-                font-size: 14px;
+                font-size: 15px;
             }
             .details-btn {
                 @include media-breakpoint-down(md) {

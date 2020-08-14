@@ -1,5 +1,5 @@
 <template>
-    <ul class="portfolio-filters d-flex flex-wrap">
+    <ul class="portfolio-filters d-flex flex-wrap justify-content-center">
         <li
             class="filter-btn"
             :class="getClass(null)"
@@ -56,12 +56,19 @@ export default {
 </script>
 
 <style lang="scss">
+@import "~bootstrap/scss/bootstrap-grid.scss";
+
 .portfolio-filters {
     padding: 0;
     list-style: none;
 
     .filter-btn {
-        margin: 0.1rem;
+        @include media-breakpoint-down(sm) {
+            padding: 0.3rem;
+            height: 2rem;
+            //   border-radius: 4px;
+        }
+        margin: 0.2rem;
         padding: 0.3rem 0.5rem 0.3rem 0.3rem;
 
         min-width: 3.5rem;
@@ -99,6 +106,12 @@ export default {
             display: block;
             height: 100%;
             margin-right: 0.5rem;
+
+            @include media-breakpoint-down(sm) {
+                width: 30px;
+                object-fit: contain;
+                margin-right: 0.2rem;
+            }
         }
     }
 }
