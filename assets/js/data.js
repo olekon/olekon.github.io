@@ -3,7 +3,9 @@ export default {
     projects: [{
         name: 'BCShop.io',
         keywords: ['ethereum', 'solidity', 'node.js', 'web3.js', 'truffle'],
-        links: false,        
+        links: {
+            source: 'https://github.com/bcshop-io/bcshop.io'
+        },        
         weight: 4,
         order: 0,
         coverImage: 'https://i.imgur.com/MVVB4Sg.png',
@@ -70,7 +72,7 @@ export default {
         },
         weight: 5,
         order: 6,
-        coverImage: 'https://i.imgur.com/mxpg7LY.png',
+        coverImage: 'https://i.imgur.com/CpsQaUY.png',
         images: [        
         ]
     }],
