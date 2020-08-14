@@ -78,17 +78,6 @@ export default {
                     `-=${delay}`
                 );
             }
-
-            // this.$gsap.fromTo(
-            //     '.project-card',
-            //     {
-            //         rotationX: 180,
-            //     },
-            //     {
-            //         rotationX: 0,
-            //         ease,
-            //         duration: 2
-            //     });
         },
         ...mapMutations(['chooseActiveProject'])
     },
