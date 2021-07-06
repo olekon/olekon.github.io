@@ -13,7 +13,7 @@ export default {
         ],
     }, {
         name: 'justsmartcontracts.dev',
-        keywords: ['react', 'web3.js', 'ethereum', 'ant design', 'node.js', 'express', 'storybook'],
+        keywords: ['react', 'web3.js', 'ethereum', 'ant design', 'node.js', 'storybook'],
         links: {
             website: 'https://justsmartcontracts.dev/',
             source: 'https://github.com/olekon/justsmartcontracts',
@@ -45,7 +45,7 @@ export default {
         ]
     }, {
         name: 'T&D Beauty',
-        keywords: ['nuxt', 'vue', 'vuex', 'bootstrap', 'oauth', 'geolocation', 'django'],
+        keywords: ['nuxt', 'vue', 'vuex', 'bootstrap', 'oauth', 'django'],
         links: false,
         weight: 5,
         order: 4,
@@ -75,6 +75,13 @@ export default {
         coverImage: 'https://i.imgur.com/CpsQaUY.png',
         images: [        
         ]
+    }, {
+        name: 'sensoriumxr',
+        keywords: ['nuxt', 'vue', 'strapi', 'lokalise'],
+        coverImage: 'https://imgur.com/XJgqaOd.jpg',
+        links: {
+            website: 'https://sensoriumxr.com/'
+        }
     }],
 
     posts: [{
@@ -97,6 +104,11 @@ export default {
         title: 'Serving a Node.js Express App From a Subfolder',
         url: 'https://medium.com/better-programming/serving-a-node-js-express-app-from-a-subfolder-a-routing-lifehack-a3c88da9840c',
         keywords: ['node.js', 'express']
+    }, {
+        name: 'lokalise',
+        title: 'How We Localized Our Website in 9 Languages in Under a Week — And So Can You',
+        url: 'https://hackernoon.com/how-we-localized-our-website-in-9-languages-in-under-a-week-and-so-can-you-ev1z37dc?source=rss',
+        keywords: ['strapi', 'nuxt', 'lokalise']
     }],
 
     contacts:[{
@@ -154,7 +166,14 @@ export default {
             image: 'jquery-logo.svg',
             filter: true,
         },
+        'strapi': {
+            image: 'strapi-logo.svg',
+            filter: true,
+        },
 
+        'lokalise': {
+
+        },
         'solidity': {
             image: ''
         },

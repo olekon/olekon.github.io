@@ -144,6 +144,21 @@ export default {
                 'Для реализации ряда сложных анимаций, таких как перемещение заголовков и контента во время прокрутки \
                 или вращение карточек проектов при переключении фильтров, я использовал GSAP.',
             ]
+        },
+        'sensoriumxr': {
+            displayName: 'Sensorium',
+            short: 'Sensorium Corporation web apps',
+            long:[
+                'Sensorium Corporation is my employer since the middle of 2020. ',
+                'Here I\' ve been working with two web applications. The first one is company\'s website that \
+                provides basic information on what kind of business it is',
+                'The second one https://sensoriumgalaxy.com/ is web application itself, intended for end-users \
+                to sign up and buy stuff for their virtual avatars.'
+            ],
+            tech: [
+                'First of all I was asked to add Strapi CMS for sensoriumxr.com. Later I integrated this with \
+                Lokalise translation platform'
+            ]
         }
     }
 };

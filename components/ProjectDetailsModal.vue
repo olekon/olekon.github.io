@@ -21,7 +21,7 @@
                         <VueMarkdown>{{ item }}</VueMarkdown>
                     </p>
                 </div>
-                <div class="details-description-tech">
+                <div class="details-description-tech mt-5">
                     <h3>{{ $t('headers.techDetails') }}</h3>
                     <p
                         v-for="(item, index) in activeProject.tech"
@@ -31,7 +31,7 @@
                     </p>
                     <KeywordsList :keywords="activeProject.keywords" />
                 </div>
-                <div class="details-description-links mt-4">
+                <div class="details-description-links mt-5">
                     <h3>{{ $t('headers.links') }}</h3>
                     <div v-if="renderLinks">
                         <p
