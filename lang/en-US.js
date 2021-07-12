@@ -101,7 +101,7 @@ export default {
                 'In this project I acted as part of the [Naulab](https://naulab.pro/) team',
                 'My job was to implement almost all the front-end part - Nuxt setup, Vue components, HTML and \
                 CSS (actually SCSS) coding. ',
-                'So far this is my favorite and most interesting project from the list due to variety of front-end \
+                'It was one of the most interesting projects from the list due to variety of front-end \
                 fields to explore and integrate.',
             ],
             tech: [
