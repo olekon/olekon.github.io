@@ -41,6 +41,7 @@
                             <b-link
                                 :href="item[1]"
                                 target="_blank"
+                                rel="noopener"
                             >
                                 {{ $t('links.' + item[0]) }}
                             </b-link>

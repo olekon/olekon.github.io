@@ -143,13 +143,15 @@ export default {
             long:[
                 'Sensorium Corporation is my employer since the middle of 2020. ',
                 'Here I\' ve been working with two web applications. The first one is company\'s website that \
-                provides basic information on what kind of business it is',
+                provides basic information on what kind of business it is.',
                 'The second one https://sensoriumgalaxy.com/ is web application itself, intended for end-users \
                 to sign up and buy stuff for their virtual avatars.'
             ],
             tech: [
-                'First of all I was asked to add Strapi CMS for sensoriumxr.com. Later I integrated this with \
-                Lokalise translation platform'
+                'First of all I was asked to add Strapi CMS for sensoriumxr.com, so to make certain pages and \
+                blocks easy-to-change',
+                'Later it was connected with Lokalise translation platform, resulting in effective and expandable\
+                 implementation of multi-language feature.'
             ]
         }
     }

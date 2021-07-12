@@ -20,6 +20,7 @@
                     class="w-75 btn-animated"
                     :href="post.url"
                     target="_blank"
+                    rel="noopener"
                 >
                     {{ $t('actions.readPost') }}
                 </b-button>

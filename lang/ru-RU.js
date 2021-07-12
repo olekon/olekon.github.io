@@ -147,17 +147,19 @@ export default {
         },
         'sensoriumxr': {
             displayName: 'Sensorium',
-            short: 'Sensorium Corporation web apps',
+            short: 'Вебсайты компании Sensorium Corporation',
             long:[
-                'Sensorium Corporation is my employer since the middle of 2020. ',
-                'Here I\' ve been working with two web applications. The first one is company\'s website that \
-                provides basic information on what kind of business it is',
-                'The second one https://sensoriumgalaxy.com/ is web application itself, intended for end-users \
-                to sign up and buy stuff for their virtual avatars.'
+                'Я работаю в этой компании с середины 2020 года.',
+                'В основном моей зоной ответственности являются два вебсайта. \
+                Первый - это корпоративный сайт, рассказывающий о деятельности компании.',
+                'Второй - https://sensoriumgalaxy.com/ - веб-приложение. предназначенное для конечных пользователей\
+                Здесь они могут регистрироваться и покупать разные штуки для своих виртуальных аватаров.',
             ],
             tech: [
-                'First of all I was asked to add Strapi CMS for sensoriumxr.com. Later I integrated this with \
-                Lokalise translation platform'
+                'Первой задачей было внедрить Strapi CMS в sensoriumxr.com, чтобы ряд страниц и контентных блоков можно\
+                 было редактировать без участия программистов.',                
+                'Позднее в эту конструкцию добавили интеграцию с платформой переводов Lokalise. Таким образом на сайте\
+                получилась поддержка мультиязычности, к тому же эффективная и расширяемая.'
             ]
         }
     }
