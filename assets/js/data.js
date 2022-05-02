@@ -69,7 +69,8 @@ export default {
             weight: 5,
             order: 5,
             coverImage: 'https://i.imgur.com/cXTFZLe.png',
-            images: []
+            images: [],
+            hide: true,
         },
         {
             name: 'portfolio',
@@ -197,7 +198,8 @@ export default {
         },
         jquery: {
             image: 'jquery-logo.svg',
-            filter: true
+            filter: true,
+            hide: true,
         },
         strapi: {
             image: 'strapi-logo.svg',

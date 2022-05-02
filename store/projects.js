@@ -42,7 +42,7 @@ export const mutations = {
 
 export const actions = {
     create({commit}, i18n) {
-        const projects = data.projects.map(project => {
+        const projects = data.projects.filter(({hide}) => !hide).map(project => {
             const newProject = {...project};
             
             const {short, long, links, tech, displayName} = i18n.t(`projects['${project.name.toLowerCase()}']`);
@@ -60,7 +60,7 @@ export const actions = {
         commit('setProjects', projects);
 
         const filters = Object.entries(data.keywords)
-            .filter(entry => entry[1].filter)
+            .filter(entry => entry[1].filter && !entry[1].hide)
             .map(entry => ({
                 name: entry[0],
                 image: entry[1].image
