@@ -9,12 +9,13 @@ export default {
         links: 'Links'
     },
     errors: {
-        error404: 'Sorry, but there is no such page', 
+        error404: 'Sorry, but there is no such page',
         common: 'Sorry, something went wrong',
     },
     links: {
         website: 'Website',
-        source: 'Source code'
+        source: 'Source code',
+        more: 'More'
     },
     actions: {
         details: 'Details...',
@@ -26,14 +27,14 @@ export default {
         p1: 'Hello. My name is Oleg Kondrakhanov',
         p2: 'I am a full stack web and blockchain developer',
         p3: 'You can check my portfolio and blog posts below',
-    },    
+    },
     projects: {
         'bcshop.io': {
             short: 'Marketplace for digital goods and services based on the Ethereum blockchain.',
             long: [
                 'I was one of the project’s core team members, the CTO. I researched Ethereum capabilities \
             and features, developed blockchain related modules - smart contracts and caching module, communicated \
-            with our integration partners (Bancor) and managed outsource website development team.', 
+            with our integration partners (Bancor) and managed outsource website development team.',
                 'Apart from tech duties I also wrote monthly progress reports and articles for the company’s blog.'],
             tech: [
                 'The website communicates with the blockchain via special API service, written in Node.js (Express). \
@@ -51,8 +52,6 @@ export default {
                 myself.',
                 'It is able to deploy a new smart contract or inspect the existing one, generate transaction to sign \
                 later or right now, watch contract’s events, etc.',
-                'A [friend of mine](https://www.linkedin.com/in/alexey-kuzmin-a2551a14a/) helped with the Metamask\
-                 wallet integration for transaction signing.'
             ],
             tech: [
                 'That project was my door to the world of modern web development, so its setup is very basic. \
@@ -61,7 +60,7 @@ export default {
                 'Back end is a simple Node.js-Express application that is used mostly for proxying the requests \
                 to third-party APIs.'
             ],
-        }, 
+        },
         'a2.legal': {
             short: 'MVP web application for a legal company.',
             long: [
@@ -112,7 +111,7 @@ export default {
                 'Backend is based on Django Rest Framework',
             ],
             links: 'Still in development'
-        }, 
+        },
         'ghvs.ru': {
             short: 'Website for the Main Cathedral of the Russian Armed Forces.',
             long: [
@@ -141,7 +140,7 @@ export default {
             displayName: 'Sensorium',
             short: 'Sensorium Corporation web apps',
             long:[
-                'Sensorium Corporation is my employer since the middle of 2020. ',
+                'Sensorium Corporation was my employer since the middle of 2020 till end of 2021 ',
                 'Here I\' ve been working with two web applications. The first one is company\'s website that \
                 provides basic information on what kind of business it is.',
                 'The second one https://sensoriumgalaxy.com/ is web application itself, intended for end-users \
@@ -152,6 +151,21 @@ export default {
                 blocks easy-to-change',
                 'Later it was connected with Lokalise translation platform, resulting in effective and expandable\
                  implementation of multi-language feature.'
+            ]
+        },
+        'decommas': {
+            displayName: 'DeCommas',
+            short: 'R&D department of 3Commas (crypto trading terminal)',
+            long:[
+                'I have been working at DeCommas as the Web3 team lead since early 2022.',
+                'In this role, I lead a team of 3-5 developers through various startup-like projects.',
+                'The primary projects included https://decommas.io/ - a collection of DeFi-related tools, \
+                and https://app.stier.trade/ - a terminal for memecoin trading.'
+            ],
+            tech: [
+                'Thanks to having multiple projects, I was lucky to utilize both widespread web technologies \
+                such as NestJS/NextJS and specialized ones like Alchemy\'s smart accounts \
+                or the LiFi SDK for cryptoassets swapping.'
             ]
         }
     }

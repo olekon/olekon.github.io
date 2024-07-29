@@ -92,7 +92,17 @@ export default {
                 website: 'https://sensoriumxr.com/'
             },
             weight: 10
-        }
+        },
+        {
+            name: 'decommas',
+            keywords: ['react', 'nextjs', 'nodejs', 'nestjs', 'ethereum', 'web3'],
+            coverImage: 'https://i.imgur.com/fBrK3Vk.png',
+            links: {
+                website: 'https://decommas.io/',
+                more: 'https://app.stier.trade/'
+            },
+            weight: 11
+        },
     ],
 
     posts: [
@@ -137,7 +147,7 @@ export default {
             url:
         'https://medium.com/better-programming/serving-a-node-js-express-app-from-a-subfolder-a-routing-lifehack-a3c88da9840c',
             keywords: ['node.js', 'express']
-        },        
+        },
     ],
 
     contacts: [
