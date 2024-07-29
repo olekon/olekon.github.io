@@ -55,8 +55,9 @@ export default {
             ],
             tech: [
                 'That project was my door to the world of modern web development, so its setup is very basic. \
-                Front-end is pure React and Ant Design UI components, smart contracts’ data is stored inside a \
-                browser’s local storage. I also used Storybook when writing my own components.',
+                Initially front-end was pure React and Ant Design UI components but later I rewrote \
+                it using Nextjs. Smart contracts’ data is stored inside a browser’s local storage. \
+                I also used Storybook when writing my own components.',
                 'Back end is a simple Node.js-Express application that is used mostly for proxying the requests \
                 to third-party APIs.'
             ],
