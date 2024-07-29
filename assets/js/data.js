@@ -95,7 +95,7 @@ export default {
         },
         {
             name: 'decommas',
-            keywords: ['react', 'nextjs', 'nodejs', 'nestjs', 'ethereum', 'web3'],
+            keywords: ['react', 'nextjs', 'node.js', 'nestjs', 'ethereum', 'web3'],
             coverImage: 'https://i.imgur.com/fBrK3Vk.png',
             links: {
                 website: 'https://decommas.io/',
@@ -178,6 +178,14 @@ export default {
     ],
 
     keywords: {
+        'nestjs': {
+            image: 'nestjs-logo.svg',
+            filter: true
+        },
+        'nextjs': {
+            image: 'nextjs-logo.svg',
+            filter: true
+        },
         'node.js': {
             image: 'nodejs-logo.svg',
             filter: true
