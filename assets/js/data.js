@@ -20,7 +20,7 @@ export default {
                 'ethereum',
                 'ant design',
                 'node.js',
-                'storybook'
+                'zustand'
             ],
             links: {
                 website: 'https://justsmartcontracts.dev/',
